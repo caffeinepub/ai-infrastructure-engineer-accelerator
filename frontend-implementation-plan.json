@@ -1,0 +1,248 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add QA & Software Testing Career Launch Program ($1,999)",
+  "requirements": [
+    {
+      "id": "REQ-48",
+      "summary": "Create /qa-testing route and landing page following existing design system",
+      "acceptanceCriteria": [
+        "Route /qa-testing renders without errors",
+        "Page uses the same design system tokens, font families, and layout patterns as /infrastructure and /data-analytics",
+        "Page is accessible via navigation Programs dropdown"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/QATestingLandingPage.tsx",
+          "operation": "create",
+          "description": "Create the QA Testing landing page component that composes all QA-specific section components. This page will follow the same compositional pattern as LandingPage.tsx and DataAnalyticsLandingPage.tsx, importing and rendering dedicated section components in sequence. The page will use the existing design system (typography, spacing, color tokens from tailwind.config.js and index.css)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-49",
+      "summary": "Build hero section for QA landing page with headline, badge, subheadline, supporting copy, and CTA",
+      "acceptanceCriteria": [
+        "Headline displays 'QA & Software Testing Career Launch Program™'",
+        "Badge shows '12-Week Intensive | US Market Focused'",
+        "No CS degree and no coding required messaging is visible",
+        "CTA button links to /apply"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/QAHeroSection.tsx",
+          "operation": "create",
+          "description": "Create a hero section component for the QA landing page following the visual design patterns from HeroSection.tsx and DataAnalyticsHeroSection.tsx. Display headline 'QA & Software Testing Career Launch Program™', badge '12-Week Intensive | US Market Focused', subheadline 'Break into the tech industry through one of the most accessible entry paths: Quality Assurance.', supporting copy 'No Computer Science degree required. No prior coding experience required.', and a primary CTA button 'Apply for the Next Cohort' linking to /apply. Use the same typography scale, spacing system, and button styling as existing hero sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-50",
+      "summary": "Build 'Who This Program Is For' section listing seven target profiles with tagline",
+      "acceptanceCriteria": [
+        "All seven audience profiles are displayed",
+        "Tagline 'This program is focused, fast-paced, and practical.' is present"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/QATargetAudienceSection.tsx",
+          "operation": "create",
+          "description": "Create a target audience section component following the card grid layout pattern from TargetAudienceSection.tsx and DataAnalyticsTargetAudienceSection.tsx. Display section heading 'Who This Program Is For' and list seven target profiles: career switchers entering tech, business or non-technical graduates, international students in the US, professionals impacted by layoffs, IT support professionals seeking transition, beginners looking for a structured pathway, and one additional profile. Include bold tagline 'This program is focused, fast-paced, and practical.' Use Check icons and the same card styling as existing target audience sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-51",
+      "summary": "Build 'Why QA Is a Smart Entry Path in the US' section with bullet points, salary ranges, and disclaimer",
+      "acceptanceCriteria": [
+        "Salary ranges are displayed correctly",
+        "Four bullet points about US market opportunity are shown",
+        "Disclaimer text is visible"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/QAOpportunitySection.tsx",
+          "operation": "create",
+          "description": "Create an opportunity section component following the layout pattern from DataAnalyticsOpportunitySection.tsx. Display section heading 'Why QA Is a Smart Entry Path in the US' with four bullet points: QA roles exist in nearly every tech company; Fintech, healthcare, SaaS, and enterprise firms require strong QA teams; Entry-level QA positions are more accessible than many engineering roles; Automation knowledge increases salary potential. Show salary ranges 'Entry-Level QA (US): $60,000–$80,000' and 'Automation QA (with experience): $90,000+' in visually distinct cards or badges. Include disclaimer 'Results vary by location and performance.' Use the same typography and spacing system."
+        }
+      ]
+    },
+    {
+      "id": "REQ-52",
+      "summary": "Build 3-month curriculum section 'What You Will Learn (12-Week Roadmap)' with three phases",
+      "acceptanceCriteria": [
+        "All three months/phases are displayed with their respective topic lists",
+        "Project callout for Month 2 is shown",
+        "Capstone project callout for Month 3 is shown",
+        "'We introduce light coding gradually.' note is present in Month 3"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/QACurriculumSection.tsx",
+          "operation": "create",
+          "description": "Create a curriculum section component following the phased card grid layout from CurriculumSection.tsx and DataAnalyticsCurriculumSection.tsx. Display section heading 'What You Will Learn (12-Week Roadmap)' with three phases: Month 1 – Foundations of Software Testing (SDLC & Agile methodology, role of QA in modern teams, types of testing, writing test cases & test scenarios, bug lifecycle & defect tracking, Jira hands-on); Month 2 – Manual + API Testing (web application testing, mobile testing fundamentals, cross-browser testing, API testing using Postman, JSON basics, test execution reporting; project: complete testing cycle for a demo SaaS application); Month 3 – Automation & Job Preparation (basic Java or Python for QA, Selenium fundamentals, automation test scripts, introduction to CI/CD, Git basics; capstone: Manual + API + Automation mini framework). Include note 'We introduce light coding gradually.' for Month 3. Use the same card styling and icon system."
+        }
+      ]
+    },
+    {
+      "id": "REQ-53",
+      "summary": "Build 'Hands-On Project Experience' section listing five portfolio deliverables with tagline",
+      "acceptanceCriteria": [
+        "All five deliverables are listed",
+        "Tagline 'Portfolio-ready material for interviews.' is visible"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/QAProjectsSection.tsx",
+          "operation": "create",
+          "description": "Create a projects section component following the card grid layout from PortfolioProjectsSection.tsx and DataAnalyticsProjectsSection.tsx. Display section heading 'Hands-On Project Experience' and list five portfolio deliverables: a complete test case repository, a defect tracking sample portfolio, API test collection, basic automation scripts, and capstone documentation. Include tagline 'Portfolio-ready material for interviews.' Use icons (Folder, Bug, Server, Code, FileText from lucide-react) and the same card styling as existing project sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-54",
+      "summary": "Build 'Career Accelerator Layer' section listing six career services with messaging",
+      "acceptanceCriteria": [
+        "All seven career services are displayed",
+        "Messaging 'We prepare you for interviews — not just tools.' is present"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/QACareerServicesSection.tsx",
+          "operation": "create",
+          "description": "Create a career services section component following the card grid layout from CareerServicesSection.tsx and DataAnalyticsCareerServicesSection.tsx. Display section heading 'Career Accelerator Layer' and list seven included services: US-format resume writing, LinkedIn optimization, QA interview question bank, mock interviews, behavioral interview training, job search strategy guidance, and 60-day post-program support. Include messaging 'We prepare you for interviews — not just tools.' Use icons (FileText, Linkedin, MessageSquare, Video, Users, TrendingUp, Calendar from lucide-react) and the same card styling."
+        }
+      ]
+    },
+    {
+      "id": "REQ-55",
+      "summary": "Build 'Program Format & Time Commitment' section displaying format details with note",
+      "acceptanceCriteria": [
+        "Duration shown as 3 Months / 12 Weeks",
+        "Time commitment of 10–15 hours/week is displayed",
+        "Selective admission messaging is present",
+        "'This is not passive learning.' note is visible"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/QAProgramStructureSection.tsx",
+          "operation": "create",
+          "description": "Create a program structure section component following the feature card grid layout from ProgramStructureSection.tsx and DataAnalyticsProgramStructureSection.tsx. Display section heading 'Program Format & Time Commitment' with seven feature cards showing: Duration: 3 Months (12 Weeks), Weekly Live Sessions, Hands-On Projects, 10–15 hours per week commitment, Cohort-Based, 60-Day Post-Program Support, Selective admission. Include note 'This is not passive learning.' Use icons (Calendar, Video, Code, Clock, Users, MessageSquare, Shield from lucide-react) and the same card styling."
+        }
+      ]
+    },
+    {
+      "id": "REQ-56",
+      "summary": "Build pricing/investment section with $1,999 price, note, messaging, and CTA",
+      "acceptanceCriteria": [
+        "Price displayed is exactly '$1,999'",
+        "'Flexible payment options available' note is shown",
+        "CTA button links to /apply"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/QAPricingSection.tsx",
+          "operation": "create",
+          "description": "Create a pricing section component following the layout pattern from PricingSection.tsx and DataAnalyticsPricingSection.tsx. Display section heading 'Investment', price '$1,999' in large prominent typography, note 'Flexible payment options available', and messaging 'This is a focused, structured 12-week career launch program — not just a course.' Include a primary CTA button 'Apply for the Next Cohort' linking to /apply. Use the same card styling, typography scale, and button styling as existing pricing sections. Ensure the price is exactly $1,999 per the constraint."
+        }
+      ]
+    },
+    {
+      "id": "REQ-57",
+      "summary": "Build FAQ section with four questions and answers",
+      "acceptanceCriteria": [
+        "All four FAQ items are present and expand/collapse",
+        "Answers match the specified content"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/QAFAQSection.tsx",
+          "operation": "create",
+          "description": "Create an FAQ section component following the accordion pattern from FAQSection.tsx and DataAnalyticsFAQSection.tsx. Use the shadcn/ui Accordion component from @/components/ui/accordion. Display section heading 'Frequently Asked Questions' and four FAQ items: 1) 'Is this beginner-friendly?' — Yes. No prior coding required. 2) 'Is automation included?' — Yes, at a foundational level in Month 3. 3) 'Can I get hired after 3 months?' — You will be prepared to apply for entry-level QA roles. Hiring depends on individual effort and market conditions. 4) 'Is this fully online?' — Yes. Live cohort-based format. Use the same accordion styling and spacing system."
+        }
+      ]
+    },
+    {
+      "id": "REQ-58",
+      "summary": "Build final CTA section with headline, copy, and primary CTA button",
+      "acceptanceCriteria": [
+        "Headline is displayed",
+        "CTA button links to /apply",
+        "Urgency messaging about limited seats is present"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/QAFinalCTASection.tsx",
+          "operation": "create",
+          "description": "Create a final CTA section component following the layout pattern from FinalCTASection.tsx and DataAnalyticsFinalCTASection.tsx. Display headline 'Your First Step Into Tech Starts Here', copy 'Apply for the next QA cohort. Seats are limited to maintain mentorship quality. Break into tech the accessible way — with structure, support, and real skills.', and a primary CTA button 'Apply for the Next Cohort' linking to /apply. Use centered layout, large typography, and the same button styling as existing final CTA sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-59",
+      "summary": "Add 'QA / Software Testing' as third option in program dropdown on /apply page",
+      "acceptanceCriteria": [
+        "Program dropdown on /apply includes 'QA & Software Testing Career Launch Program' as a selectable option",
+        "The option can be submitted with the form"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/ApplicationForm.tsx",
+          "operation": "modify",
+          "description": "Add a third option to the program selection dropdown in the ApplicationForm component. The new option should have value 'qa-testing' (mapped to the backend Program.qaTestingProgram enum variant) and display label 'QA & Software Testing Career Launch Program'. Add this option below the existing Infrastructure and Data Analytics options. Update the form submission logic to handle the new program type correctly when calling the submitApplication backend function."
+        }
+      ]
+    },
+    {
+      "id": "REQ-61",
+      "summary": "Add QA & Software Testing as third program card in Featured Programs section on home page",
+      "acceptanceCriteria": [
+        "Home page Featured Programs section shows three program cards",
+        "QA card displays the correct title, blurb, and badge",
+        "'View syllabus' button links to /qa-testing"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FeaturedProgramsSection.tsx",
+          "operation": "modify",
+          "description": "Add a third program card to the FeaturedProgramsSection component for the QA & Software Testing program. The card should display: title 'QA & Software Testing Career Launch Program', blurb 'Your first step into tech — manual testing, API testing, automation basics, and job readiness in 12 weeks.', badge 'Entry-Level Gateway', CTA 'View syllabus' linking to /qa-testing, and cohort microcopy 'Next cohort intake — limited seats.' Position the card alongside the existing Infrastructure and Data Analytics cards using the same card styling, layout, and visual design."
+        }
+      ]
+    },
+    {
+      "id": "REQ-62",
+      "summary": "Update navigation Programs dropdown to include QA & Software Testing link",
+      "acceptanceCriteria": [
+        "Programs dropdown in the sticky nav contains three items: Infrastructure, Data & Analytics, and QA & Software Testing",
+        "Clicking 'QA & Software Testing' navigates to /qa-testing"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Layout.tsx",
+          "operation": "modify",
+          "description": "Add a third link to the Programs dropdown menu in the Layout component's navigation. The new link should display 'QA & Software Testing' and point to /qa-testing. Position it below the existing 'Infrastructure Engineering' and 'Data & Analytics' links in the dropdown menu. Maintain the same styling and interaction patterns as the existing dropdown items."
+        }
+      ]
+    },
+    {
+      "id": "REQ-63",
+      "summary": "Add /qa-testing route to App.tsx rendering the QA landing page",
+      "acceptanceCriteria": [
+        "Navigating to /qa-testing renders the QA landing page",
+        "All other existing routes remain unaffected"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add a new route definition for /qa-testing in the App component's TanStack Router configuration. Import the new QATestingLandingPage component and register it as a route that renders within the Layout wrapper. Position the route alongside the existing /infrastructure and /data-analytics routes. Ensure the route is accessible via direct navigation and does not conflict with existing routes."
+        },
+        {
+          "path": "frontend/src/pages/QATestingLandingPage.tsx",
+          "operation": "modify",
+          "description": "Wire all the QA section components into the QATestingLandingPage component by importing and rendering them in the correct sequence: QAHeroSection, QATargetAudienceSection, QAOpportunitySection, QACurriculumSection, QAProjectsSection, QACareerServicesSection, QAProgramStructureSection, QAPricingSection, QAFAQSection, and QAFinalCTASection. Ensure the page structure matches the compositional pattern used in LandingPage.tsx and DataAnalyticsLandingPage.tsx."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-new-qa-testing-route-and-landing-page-for-the-qa-software-testing-career-launch-program-the-page-must-compose-dedicated-section-components-following-the-same-visual-design-system-typography-and-premium-styling-as-the-existing-infrastructure-and-data-analytics-landing-pages",
+      "featureTitle": "Create a new `/qa-testing` route and landing page for the QA & Software Testing Career Launch Program. The page must compose dedicated section components following the same visual design system, typography, and premium styling as the existing Infrastructure and Data Analytics landing pages.",
+      "files": [
+        "frontend/src/pages/QATestingLandingPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-48"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-hero-section-for-the-qa-landing-page-with-headline-qa-software-testing-career-launch-program-badge-tag-12-week-intensive-us-market-focused-subheadline-break-into-the-tech-industry-through-one-of-the-most-accessible-entry-paths-quality-assurance-supporting-copy-no-computer-science-degree-required-no-prior-coding-experience-required-and-a-primary-cta-button-apply-for-the-next-cohort-linking-to-apply",
+      "featureTitle": "Build a hero section for the QA landing page with headline 'QA & Software Testing Career Launch Program™', badge/tag '12-Week Intensive | US Market Focused', subheadline 'Break into the tech industry through one of the most accessible entry paths: Quality Assurance.', supporting copy 'No Computer Science degree required. No prior coding experience required.', and a primary CTA button 'Apply for the Next Cohort' linking to /apply.",
+      "files": [
+        "frontend/src/components/QAHeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-49"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-who-this-program-is-for-section-on-the-qa-landing-page-listing-seven-target-profiles-career-switchers-entering-tech-business-or-non-technical-graduates-international-students-in-the-us-professionals-impacted-by-layoffs-it-support-professionals-seeking-transition-beginners-looking-for-a-structured-pathway-include-a-bold-tagline-this-program-is-focused-fast-paced-and-practical",
+      "featureTitle": "Build a 'Who This Program Is For' section on the QA landing page listing seven target profiles: career switchers entering tech, business or non-technical graduates, international students in the US, professionals impacted by layoffs, IT support professionals seeking transition, beginners looking for a structured pathway. Include a bold tagline 'This program is focused, fast-paced, and practical.'",
+      "files": [
+        "frontend/src/components/QATargetAudienceSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-50"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-why-qa-is-a-smart-entry-path-in-the-us-section-on-the-qa-landing-page-include-bullet-points-qa-roles-exist-in-nearly-every-tech-company-fintech-healthcare-saas-and-enterprise-firms-require-strong-qa-teams-entry-level-qa-positions-are-more-accessible-than-many-engineering-roles-automation-knowledge-increases-salary-potential-display-salary-ranges-entry-level-qa-us-60-000-80-000-and-automation-qa-with-experience-90-000-include-disclaimer-results-vary-by-location-and-performance",
+      "featureTitle": "Build a 'Why QA Is a Smart Entry Path in the US' section on the QA landing page. Include bullet points: QA roles exist in nearly every tech company; Fintech, healthcare, SaaS, and enterprise firms require strong QA teams; Entry-level QA positions are more accessible than many engineering roles; Automation knowledge increases salary potential. Display salary ranges: Entry-Level QA (US): $60,000–$80,000 and Automation QA (with experience): $90,000+. Include disclaimer 'Results vary by location and performance.'",
+      "files": [
+        "frontend/src/components/QAOpportunitySection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-51"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-3-month-curriculum-section-what-you-will-learn-12-week-roadmap-on-the-qa-landing-page-with-three-phases-month-1-foundations-of-software-testing-sdlc-agile-methodology-role-of-qa-in-modern-teams-types-of-testing-functional-regression-uat-smoke-writing-test-cases-test-scenarios-bug-lifecycle-defect-tracking-jira-hands-on-month-2-manual-api-testing-web-application-testing-mobile-testing-fundamentals-cross-browser-testing-api-testing-using-postman-json-basics-test-execution-reporting-project-complete-testing-cycle-for-a-demo-saas-application-month-3-automation-job-preparation-basic-java-or-python-for-qa-selenium-fundamentals-automation-test-scripts-introduction-to-ci-cd-git-basics-capstone-manual-api-automation-mini-framework-include-note-we-introduce-light-coding-gradually-for-month-3",
+      "featureTitle": "Build a 3-month curriculum section 'What You Will Learn (12-Week Roadmap)' on the QA landing page with three phases: Month 1 – Foundations of Software Testing (SDLC & Agile methodology, role of QA in modern teams, types of testing — functional/regression/UAT/smoke, writing test cases & test scenarios, bug lifecycle & defect tracking, Jira hands-on); Month 2 – Manual + API Testing (web application testing, mobile testing fundamentals, cross-browser testing, API testing using Postman, JSON basics, test execution reporting; project: complete testing cycle for a demo SaaS application); Month 3 – Automation & Job Preparation (basic Java or Python for QA, Selenium fundamentals, automation test scripts, introduction to CI/CD, Git basics; capstone: Manual + API + Automation mini framework). Include note 'We introduce light coding gradually.' for Month 3.",
+      "files": [
+        "frontend/src/components/QACurriculumSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-52"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-hands-on-project-experience-section-on-the-qa-landing-page-listing-five-portfolio-deliverables-students-will-complete-a-complete-test-case-repository-a-defect-tracking-sample-portfolio-api-test-collection-basic-automation-scripts-and-capstone-documentation-include-tagline-portfolio-ready-material-for-interviews",
+      "featureTitle": "Build a 'Hands-On Project Experience' section on the QA landing page listing five portfolio deliverables students will complete: a complete test case repository, a defect tracking sample portfolio, API test collection, basic automation scripts, and capstone documentation. Include tagline 'Portfolio-ready material for interviews.'",
+      "files": [
+        "frontend/src/components/QAProjectsSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-53"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-career-accelerator-layer-section-on-the-qa-landing-page-listing-six-included-services-us-format-resume-writing-linkedin-optimization-qa-interview-question-bank-mock-interviews-behavioral-interview-training-job-search-strategy-guidance-and-60-day-post-program-support-include-messaging-we-prepare-you-for-interviews-not-just-tools",
+      "featureTitle": "Build a 'Career Accelerator Layer' section on the QA landing page listing six included services: US-format resume writing, LinkedIn optimization, QA interview question bank, mock interviews, behavioral interview training, job search strategy guidance, and 60-day post-program support. Include messaging 'We prepare you for interviews — not just tools.'",
+      "files": [
+        "frontend/src/components/QACareerServicesSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-54"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-program-format-time-commitment-section-on-the-qa-landing-page-displaying-duration-3-months-12-weeks-weekly-live-sessions-hands-on-projects-10-15-hours-per-week-commitment-cohort-based-60-day-post-program-support-selective-admission-include-note-this-is-not-passive-learning",
+      "featureTitle": "Build a 'Program Format & Time Commitment' section on the QA landing page displaying: Duration: 3 Months (12 Weeks), Weekly Live Sessions, Hands-On Projects, 10–15 hours per week commitment, Cohort-Based, 60-Day Post-Program Support, Selective admission. Include note 'This is not passive learning.'",
+      "files": [
+        "frontend/src/components/QAProgramStructureSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-55"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-pricing-investment-section-on-the-qa-landing-page-with-headline-investment-price-displayed-as-1-999-note-flexible-payment-options-available-and-messaging-this-is-a-focused-structured-12-week-career-launch-program-not-just-a-course-include-a-cta-button-apply-for-the-next-cohort-linking-to-apply",
+      "featureTitle": "Build a pricing/investment section on the QA landing page with headline 'Investment', price displayed as '$1,999', note 'Flexible payment options available', and messaging 'This is a focused, structured 12-week career launch program — not just a course.' Include a CTA button 'Apply for the Next Cohort' linking to /apply.",
+      "files": [
+        "frontend/src/components/QAPricingSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-faq-section-on-the-qa-landing-page-with-four-questions-and-answers-1-is-this-beginner-friendly-yes-no-prior-coding-required-2-is-automation-included-yes-at-a-foundational-level-in-month-3-3-can-i-get-hired-after-3-months-you-will-be-prepared-to-apply-for-entry-level-qa-roles-hiring-depends-on-individual-effort-and-market-conditions-4-is-this-fully-online-yes-live-cohort-based-format",
+      "featureTitle": "Build a FAQ section on the QA landing page with four questions and answers: 1) 'Is this beginner-friendly?' — Yes. No prior coding required. 2) 'Is automation included?' — Yes, at a foundational level in Month 3. 3) 'Can I get hired after 3 months?' — You will be prepared to apply for entry-level QA roles. Hiring depends on individual effort and market conditions. 4) 'Is this fully online?' — Yes. Live cohort-based format.",
+      "files": [
+        "frontend/src/components/QAFAQSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-57"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-final-cta-section-on-the-qa-landing-page-with-headline-your-first-step-into-tech-starts-here-copy-apply-for-the-next-qa-cohort-seats-are-limited-to-maintain-mentorship-quality-break-into-tech-the-accessible-way-with-structure-support-and-real-skills-and-a-primary-cta-button-apply-for-the-next-cohort-linking-to-apply",
+      "featureTitle": "Build a final CTA section on the QA landing page with headline 'Your First Step Into Tech Starts Here', copy 'Apply for the next QA cohort. Seats are limited to maintain mentorship quality. Break into tech the accessible way — with structure, support, and real skills.', and a primary CTA button 'Apply for the Next Cohort' linking to /apply.",
+      "files": [
+        "frontend/src/components/QAFinalCTASection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-58"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-qa-software-testing-as-a-third-option-in-the-program-selection-dropdown-on-the-apply-application-form-page-the-option-value-should-be-qa-testing-and-the-display-label-should-be-qa-software-testing-career-launch-program",
+      "featureTitle": "Add 'QA / Software Testing' as a third option in the program selection dropdown on the /apply application form page. The option value should be 'qa-testing' and the display label should be 'QA & Software Testing Career Launch Program'.",
+      "files": [
+        "frontend/src/pages/ApplicationForm.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-59"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-qa-software-testing-as-a-third-program-card-in-the-featured-programs-section-featuredprogramssection-tsx-on-the-home-page-the-card-should-display-title-qa-software-testing-career-launch-program-blurb-your-first-step-into-tech-manual-testing-api-testing-automation-basics-and-job-readiness-in-12-weeks-badge-entry-level-gateway-cta-view-syllabus-linking-to-qa-testing-and-cohort-microcopy-next-cohort-intake-limited-seats",
+      "featureTitle": "Add QA & Software Testing as a third program card in the Featured Programs section (FeaturedProgramsSection.tsx) on the home page. The card should display: title 'QA & Software Testing Career Launch Program', blurb 'Your first step into tech — manual testing, API testing, automation basics, and job readiness in 12 weeks.', badge 'Entry-Level Gateway', CTA 'View syllabus' linking to /qa-testing, and cohort microcopy 'Next cohort intake — limited seats.'",
+      "files": [
+        "frontend/src/components/FeaturedProgramsSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-61"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-navigation-programs-dropdown-in-layout-tsx-to-include-a-third-link-qa-software-testing-pointing-to-qa-testing-positioned-below-the-infrastructure-and-data-analytics-links",
+      "featureTitle": "Update the navigation Programs dropdown in Layout.tsx to include a third link: 'QA & Software Testing' pointing to /qa-testing, positioned below the Infrastructure and Data Analytics links.",
+      "files": [
+        "frontend/src/components/Layout.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-62"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-app-tsx-to-add-the-qa-testing-route-rendering-the-new-qa-landing-page-component",
+      "featureTitle": "Update App.tsx to add the /qa-testing route, rendering the new QA landing page component.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/QATestingLandingPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-63"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "kind": "build_request",
+  "title": "Add QA & Software Testing Career Launch Program ($1,999)",
+  "projectName": "Stack Teacher",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-48",
+      "text": "Create a new `/qa-testing` route and landing page for the QA & Software Testing Career Launch Program. The page must compose dedicated section components following the same visual design system, typography, and premium styling as the existing Infrastructure and Data Analytics landing pages.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Create a new `/qa-testing` landing page with the full content you provided"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Route /qa-testing renders without errors",
+        "Page uses the same design system tokens, font families, and layout patterns as /infrastructure and /data-analytics",
+        "Page is accessible via navigation Programs dropdown"
+      ]
+    },
+    {
+      "id": "REQ-49",
+      "text": "Build a hero section for the QA landing page with headline 'QA & Software Testing Career Launch Program™', badge/tag '12-Week Intensive | US Market Focused', subheadline 'Break into the tech industry through one of the most accessible entry paths: Quality Assurance.', supporting copy 'No Computer Science degree required. No prior coding experience required.', and a primary CTA button 'Apply for the Next Cohort' linking to /apply.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "QA & Software Testing Career Launch Program",
+          "12-Week Intensive | US Market Focused",
+          "Break into the tech industry through one of the most accessible entry paths: Quality Assurance."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Headline displays 'QA & Software Testing Career Launch Program™'",
+        "Badge shows '12-Week Intensive | US Market Focused'",
+        "No CS degree and no coding required messaging is visible",
+        "CTA button links to /apply"
+      ]
+    },
+    {
+      "id": "REQ-50",
+      "text": "Build a 'Who This Program Is For' section on the QA landing page listing seven target profiles: career switchers entering tech, business or non-technical graduates, international students in the US, professionals impacted by layoffs, IT support professionals seeking transition, beginners looking for a structured pathway. Include a bold tagline 'This program is focused, fast-paced, and practical.'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Career switchers entering tech",
+          "Business or non-technical graduates",
+          "International students in the US",
+          "Professionals impacted by layoffs",
+          "IT support professionals seeking transition",
+          "Beginners looking for a structured pathway"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All seven audience profiles are displayed",
+        "Tagline 'This program is focused, fast-paced, and practical.' is present"
+      ]
+    },
+    {
+      "id": "REQ-51",
+      "text": "Build a 'Why QA Is a Smart Entry Path in the US' section on the QA landing page. Include bullet points: QA roles exist in nearly every tech company; Fintech, healthcare, SaaS, and enterprise firms require strong QA teams; Entry-level QA positions are more accessible than many engineering roles; Automation knowledge increases salary potential. Display salary ranges: Entry-Level QA (US): $60,000–$80,000 and Automation QA (with experience): $90,000+. Include disclaimer 'Results vary by location and performance.'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Entry-Level QA Salary (US): $60,000 – $80,000",
+          "Automation QA (with experience): $90,000+",
+          "Results vary by location and performance."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Salary ranges are displayed correctly",
+        "Four bullet points about US market opportunity are shown",
+        "Disclaimer text is visible"
+      ]
+    },
+    {
+      "id": "REQ-52",
+      "text": "Build a 3-month curriculum section 'What You Will Learn (12-Week Roadmap)' on the QA landing page with three phases: Month 1 – Foundations of Software Testing (SDLC & Agile methodology, role of QA in modern teams, types of testing — functional/regression/UAT/smoke, writing test cases & test scenarios, bug lifecycle & defect tracking, Jira hands-on); Month 2 – Manual + API Testing (web application testing, mobile testing fundamentals, cross-browser testing, API testing using Postman, JSON basics, test execution reporting; project: complete testing cycle for a demo SaaS application); Month 3 – Automation & Job Preparation (basic Java or Python for QA, Selenium fundamentals, automation test scripts, introduction to CI/CD, Git basics; capstone: Manual + API + Automation mini framework). Include note 'We introduce light coding gradually.' for Month 3.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Month 1 – Foundations of Software Testing",
+          "Month 2 – Manual + API Testing",
+          "Month 3 – Automation & Job Preparation",
+          "We introduce light coding gradually."
+        ]
+      },
+      "acceptanceCriteria": [
+        "All three months/phases are displayed with their respective topic lists",
+        "Project callout for Month 2 is shown",
+        "Capstone project callout for Month 3 is shown",
+        "'We introduce light coding gradually.' note is present in Month 3"
+      ]
+    },
+    {
+      "id": "REQ-53",
+      "text": "Build a 'Hands-On Project Experience' section on the QA landing page listing five portfolio deliverables students will complete: a complete test case repository, a defect tracking sample portfolio, API test collection, basic automation scripts, and capstone documentation. Include tagline 'Portfolio-ready material for interviews.'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "A complete test case repository",
+          "A defect tracking sample portfolio",
+          "API test collection",
+          "Basic automation scripts",
+          "Capstone documentation",
+          "Portfolio-ready material for interviews."
+        ]
+      },
+      "acceptanceCriteria": [
+        "All five deliverables are listed",
+        "Tagline 'Portfolio-ready material for interviews.' is visible"
+      ]
+    },
+    {
+      "id": "REQ-54",
+      "text": "Build a 'Career Accelerator Layer' section on the QA landing page listing six included services: US-format resume writing, LinkedIn optimization, QA interview question bank, mock interviews, behavioral interview training, job search strategy guidance, and 60-day post-program support. Include messaging 'We prepare you for interviews — not just tools.'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "US-format resume writing",
+          "LinkedIn optimization",
+          "QA interview question bank",
+          "Mock interviews",
+          "Behavioral interview training",
+          "60-day post-program support",
+          "We prepare you for interviews — not just tools."
+        ]
+      },
+      "acceptanceCriteria": [
+        "All seven career services are displayed",
+        "Messaging 'We prepare you for interviews — not just tools.' is present"
+      ]
+    },
+    {
+      "id": "REQ-55",
+      "text": "Build a 'Program Format & Time Commitment' section on the QA landing page displaying: Duration: 3 Months (12 Weeks), Weekly Live Sessions, Hands-On Projects, 10–15 hours per week commitment, Cohort-Based, 60-Day Post-Program Support, Selective admission. Include note 'This is not passive learning.'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "10–15 hours per week",
+          "Live sessions + assignments",
+          "Project work required",
+          "This is not passive learning."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Duration shown as 3 Months / 12 Weeks",
+        "Time commitment of 10–15 hours/week is displayed",
+        "Selective admission messaging is present",
+        "'This is not passive learning.' note is visible"
+      ]
+    },
+    {
+      "id": "REQ-56",
+      "text": "Build a pricing/investment section on the QA landing page with headline 'Investment', price displayed as '$1,999', note 'Flexible payment options available', and messaging 'This is a focused, structured 12-week career launch program — not just a course.' Include a CTA button 'Apply for the Next Cohort' linking to /apply.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Price will be $1999",
+          "$1,499 – $1,999"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Price displayed is exactly '$1,999'",
+        "'Flexible payment options available' note is shown",
+        "CTA button links to /apply"
+      ]
+    },
+    {
+      "id": "REQ-57",
+      "text": "Build a FAQ section on the QA landing page with four questions and answers: 1) 'Is this beginner-friendly?' — Yes. No prior coding required. 2) 'Is automation included?' — Yes, at a foundational level in Month 3. 3) 'Can I get hired after 3 months?' — You will be prepared to apply for entry-level QA roles. Hiring depends on individual effort and market conditions. 4) 'Is this fully online?' — Yes. Live cohort-based format.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Is this beginner-friendly?",
+          "Is automation included?",
+          "Can I get hired after 3 months?",
+          "Is this fully online?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All four FAQ items are present and expand/collapse",
+        "Answers match the specified content"
+      ]
+    },
+    {
+      "id": "REQ-58",
+      "text": "Build a final CTA section on the QA landing page with headline 'Your First Step Into Tech Starts Here', copy 'Apply for the next QA cohort. Seats are limited to maintain mentorship quality. Break into tech the accessible way — with structure, support, and real skills.', and a primary CTA button 'Apply for the Next Cohort' linking to /apply.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Create final CTA section",
+          "Seats are limited to maintain mentorship quality"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Headline is displayed",
+        "CTA button links to /apply",
+        "Urgency messaging about limited seats is present"
+      ]
+    },
+    {
+      "id": "REQ-59",
+      "text": "Add 'QA / Software Testing' as a third option in the program selection dropdown on the /apply application form page. The option value should be 'qa-testing' and the display label should be 'QA & Software Testing Career Launch Program'.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Add it to Program drop down",
+          "Add QA / Software Testing as third option in program selection dropdown on /apply page"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Program dropdown on /apply includes 'QA & Software Testing Career Launch Program' as a selectable option",
+        "The option can be submitted with the form"
+      ]
+    },
+    {
+      "id": "REQ-60",
+      "text": "Update the backend ApplicationForm type and Program variant in backend/main.mo to include a third program option for QA & Software Testing (e.g., #qaTestingProgram), so form submissions for this program are stored and retrievable correctly.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Add QA / Software Testing as third option in program selection dropdown on /apply page"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Program type in Motoko includes a QA / Software Testing variant",
+        "Application submissions with QA program selection are stored without errors",
+        "Existing applications for the other two programs are unaffected"
+      ]
+    },
+    {
+      "id": "REQ-61",
+      "text": "Add QA & Software Testing as a third program card in the Featured Programs section (FeaturedProgramsSection.tsx) on the home page. The card should display: title 'QA & Software Testing Career Launch Program', blurb 'Your first step into tech — manual testing, API testing, automation basics, and job readiness in 12 weeks.', badge 'Entry-Level Gateway', CTA 'View syllabus' linking to /qa-testing, and cohort microcopy 'Next cohort intake — limited seats.'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Add QA as third program card in Featured Programs section on home page, positioned as 'Your First Step into Tech' entry-level gateway"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Home page Featured Programs section shows three program cards",
+        "QA card displays the correct title, blurb, and badge",
+        "'View syllabus' button links to /qa-testing"
+      ]
+    },
+    {
+      "id": "REQ-62",
+      "text": "Update the navigation Programs dropdown in Layout.tsx to include a third link: 'QA & Software Testing' pointing to /qa-testing, positioned below the Infrastructure and Data Analytics links.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Update navigation Programs dropdown to include QA / Software Testing linking to /qa-testing"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Programs dropdown in the sticky nav contains three items: Infrastructure, Data & Analytics, and QA & Software Testing",
+        "Clicking 'QA & Software Testing' navigates to /qa-testing"
+      ]
+    },
+    {
+      "id": "REQ-63",
+      "text": "Update App.tsx to add the /qa-testing route, rendering the new QA landing page component.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Create a new `/qa-testing` landing page"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigating to /qa-testing renders the QA landing page",
+        "All other existing routes remain unaffected"
+      ]
+    }
+  ],
+  "constraints": [
+    "Price for QA program must be displayed as $1,999 — not $1,499 or $2,999",
+    "Do not modify immutable frontend paths: useInternetIdentity, useActor, main.tsx, or ui components",
+    "QA landing page must match the existing visual design system (typography, color palette, spacing) used on /infrastructure and /data-analytics",
+    "Do not alter existing Infrastructure or Data Analytics program content or pricing"
+  ],
+  "nonGoals": [
+    "Changing the pricing of the Infrastructure ($2,999) or Data Analytics ($2,999) programs",
+    "Adding payment processing or checkout flow",
+    "Creating a separate admin view for QA applications",
+    "Adding real-time features or external API integrations"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

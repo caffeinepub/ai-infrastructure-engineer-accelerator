@@ -1,0 +1,221 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T16:36:22.620Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 16,
+    "implemented": 15,
+    "items": [
+      {
+        "id": "REQ-48",
+        "summary": "Create a new `/qa-testing` route and landing page for the QA & Software Testing Career Launch Program. The page must compose dedicated section components following the same visual design system, typography, and premium styling as the existing Infrastructure and Data Analytics landing pages.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/QATestingLandingPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/QATestingLandingPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-49",
+        "summary": "Build a hero section for the QA landing page with headline 'QA & Software Testing Career Launch Program™', badge/tag '12-Week Intensive | US Market Focused', subheadline 'Break into the tech industry through one of the most accessible entry paths: Quality Assurance.', supporting copy 'No Computer Science degree required. No prior coding experience required.', and a primary CTA button 'Apply for the Next Cohort' linking to /apply.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/QAHeroSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/QAHeroSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-50",
+        "summary": "Build a 'Who This Program Is For' section on the QA landing page listing seven target profiles: career switchers entering tech, business or non-technical graduates, international students in the US, professionals impacted by layoffs, IT support professionals seeking transition, beginners looking for a structured pathway. Include a bold tagline 'This program is focused, fast-paced, and practical.'",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/QATargetAudienceSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/QATargetAudienceSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-51",
+        "summary": "Build a 'Why QA Is a Smart Entry Path in the US' section on the QA landing page. Include bullet points: QA roles exist in nearly every tech company; Fintech, healthcare, SaaS, and enterprise firms require strong QA teams; Entry-level QA positions are more accessible than many engineering roles; Automation knowledge increases salary potential. Display salary ranges: Entry-Level QA (US): $60,000–$80,000 and Automation QA (with experience): $90,000+. Include disclaimer 'Results vary by location and performance.'",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/QAOpportunitySection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/QAOpportunitySection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-52",
+        "summary": "Build a 3-month curriculum section 'What You Will Learn (12-Week Roadmap)' on the QA landing page with three phases: Month 1 – Foundations of Software Testing (SDLC & Agile methodology, role of QA in modern teams, types of testing — functional/regression/UAT/smoke, writing test cases & test scenarios, bug lifecycle & defect tracking, Jira hands-on); Month 2 – Manual + API Testing (web application testing, mobile testing fundamentals, cross-browser testing, API testing using Postman, JSON basics, test execution reporting; project: complete testing cycle for a demo SaaS application); Month 3 – Automation & Job Preparation (basic Java or Python for QA, Selenium fundamentals, automation test scripts, introduction to CI/CD, Git basics; capstone: Manual + API + Automation mini framework). Include note 'We introduce light coding gradually.' for Month 3.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/QACurriculumSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/QACurriculumSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-53",
+        "summary": "Build a 'Hands-On Project Experience' section on the QA landing page listing five portfolio deliverables students will complete: a complete test case repository, a defect tracking sample portfolio, API test collection, basic automation scripts, and capstone documentation. Include tagline 'Portfolio-ready material for interviews.'",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/QAProjectsSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/QAProjectsSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-54",
+        "summary": "Build a 'Career Accelerator Layer' section on the QA landing page listing six included services: US-format resume writing, LinkedIn optimization, QA interview question bank, mock interviews, behavioral interview training, job search strategy guidance, and 60-day post-program support. Include messaging 'We prepare you for interviews — not just tools.'",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/QACareerServicesSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/QACareerServicesSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-55",
+        "summary": "Build a 'Program Format & Time Commitment' section on the QA landing page displaying: Duration: 3 Months (12 Weeks), Weekly Live Sessions, Hands-On Projects, 10–15 hours per week commitment, Cohort-Based, 60-Day Post-Program Support, Selective admission. Include note 'This is not passive learning.'",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/QAProgramStructureSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/QAProgramStructureSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-56",
+        "summary": "Build a pricing/investment section on the QA landing page with headline 'Investment', price displayed as '$1,999', note 'Flexible payment options available', and messaging 'This is a focused, structured 12-week career launch program — not just a course.' Include a CTA button 'Apply for the Next Cohort' linking to /apply.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/QAPricingSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/QAPricingSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-57",
+        "summary": "Build a FAQ section on the QA landing page with four questions and answers: 1) 'Is this beginner-friendly?' — Yes. No prior coding required. 2) 'Is automation included?' — Yes, at a foundational level in Month 3. 3) 'Can I get hired after 3 months?' — You will be prepared to apply for entry-level QA roles. Hiring depends on individual effort and market conditions. 4) 'Is this fully online?' — Yes. Live cohort-based format.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/QAFAQSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/QAFAQSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-58",
+        "summary": "Build a final CTA section on the QA landing page with headline 'Your First Step Into Tech Starts Here', copy 'Apply for the next QA cohort. Seats are limited to maintain mentorship quality. Break into tech the accessible way — with structure, support, and real skills.', and a primary CTA button 'Apply for the Next Cohort' linking to /apply.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/QAFinalCTASection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/QAFinalCTASection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-59",
+        "summary": "Add 'QA / Software Testing' as a third option in the program selection dropdown on the /apply application form page. The option value should be 'qa-testing' and the display label should be 'QA & Software Testing Career Launch Program'.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/ApplicationForm.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/ApplicationForm.tsx"
+        ]
+      },
+      {
+        "id": "REQ-60",
+        "summary": "Update the backend ApplicationForm type and Program variant in backend/main.mo to include a third program option for QA & Software Testing (e.g., #qaTestingProgram), so form submissions for this program are stored and retrievable correctly.",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-61",
+        "summary": "Add QA & Software Testing as a third program card in the Featured Programs section (FeaturedProgramsSection.tsx) on the home page. The card should display: title 'QA & Software Testing Career Launch Program', blurb 'Your first step into tech — manual testing, API testing, automation basics, and job readiness in 12 weeks.', badge 'Entry-Level Gateway', CTA 'View syllabus' linking to /qa-testing, and cohort microcopy 'Next cohort intake — limited seats.'",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/FeaturedProgramsSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/FeaturedProgramsSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-62",
+        "summary": "Update the navigation Programs dropdown in Layout.tsx to include a third link: 'QA & Software Testing' pointing to /qa-testing, positioned below the Infrastructure and Data Analytics links.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Layout.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Layout.tsx"
+        ]
+      },
+      {
+        "id": "REQ-63",
+        "summary": "Update App.tsx to add the /qa-testing route, rendering the new QA landing page component.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/pages/QATestingLandingPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/pages/QATestingLandingPage.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/FeaturedProgramsSection.tsx",
+    "frontend/src/components/Layout.tsx",
+    "frontend/src/components/QACareerServicesSection.tsx",
+    "frontend/src/components/QACurriculumSection.tsx",
+    "frontend/src/components/QAFAQSection.tsx",
+    "frontend/src/components/QAFinalCTASection.tsx",
+    "frontend/src/components/QAHeroSection.tsx",
+    "frontend/src/components/QAOpportunitySection.tsx",
+    "frontend/src/components/QAPricingSection.tsx",
+    "frontend/src/components/QAProgramStructureSection.tsx",
+    "frontend/src/components/QAProjectsSection.tsx",
+    "frontend/src/components/QATargetAudienceSection.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/pages/ApplicationForm.tsx",
+    "frontend/src/pages/QATestingLandingPage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
