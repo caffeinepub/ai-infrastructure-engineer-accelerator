@@ -1,54 +1,21 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "Building a Privacy Policy page for Stack Teacher (stackteacher.com) with updated branding, contact details, and styled cookies table.",
-  "architectural_notes": [
-    "Privacy Policy page lives in the site footer alongside Terms of Use"
-  ],
+  "summary": "Stack Teacher project — updating branding and email references across the site.",
+  "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
   "existing_features": [
     {
-      "id": "feature-create-a-new-privacypolicypage-component-at-frontend-src-pages-privacypolicypage-tsx-containing-the-full-privacy-policy-content-with-all-branding-references-using-stack-teacher-and-stackteacher-com-no-careerist-or-careerist-com-references-anywhere-all-email-references-must-use-support-stackteacher-com-and-compliance-stackteacher-com-the-physical-address-must-be-30-n-gould-st-ste-n-sheridan-wy-82801-usa-the-phone-number-must-be-1234567890-the-page-layout-and-typography-should-match-the-existing-termsofusepage-tsx-style",
-      "title": "Create a new PrivacyPolicyPage component at frontend/src/pages/PrivacyPolicyPage.tsx containing the full Privacy Policy content with all branding references using 'Stack Teacher' and 'stackteacher.com' (no 'Careerist' or 'careerist.com' references anywhere). All email references must use support@stackteacher.com and compliance@stackteacher.com. The physical address must be '30 N Gould St Ste N, Sheridan, WY 82801, USA'. The phone number must be '1234567890'. The page layout and typography should match the existing TermsOfUsePage.tsx style.",
+      "id": "feature-replace-all-occurrences-of-compliance-stackteacher-com-with-support-stackteacher-com-across-all-frontend-source-files",
+      "title": "Replace all occurrences of 'compliance@stackteacher.com' with 'support@stackteacher.com' across all frontend source files.",
       "reqIds": [
         "REQ-1"
       ],
       "version": 1
-    },
-    {
-      "id": "feature-within-the-privacypolicypage-replace-any-plain-text-or-prose-cookie-descriptions-with-a-styled-html-table-that-lists-cookie-categories-cookie-names-purpose-and-duration-expiry-the-table-must-use-tailwind-css-classes-consistent-with-the-site-s-design-system-e-g-bordered-cells-alternating-row-shading-responsive-overflow-x-auto-wrapper",
-      "title": "Within the PrivacyPolicyPage, replace any plain-text or prose cookie descriptions with a styled HTML table that lists cookie categories, cookie names, purpose, and duration/expiry. The table must use Tailwind CSS classes consistent with the site's design system (e.g., bordered cells, alternating row shading, responsive overflow-x-auto wrapper).",
-      "reqIds": [
-        "REQ-2"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-register-a-new-privacy-policy-route-in-frontend-src-app-tsx-that-renders-the-privacypolicypage-component-following-the-same-routing-pattern-used-for-the-existing-terms-route",
-      "title": "Register a new /privacy-policy route in frontend/src/App.tsx that renders the PrivacyPolicyPage component, following the same routing pattern used for the existing /terms route.",
-      "reqIds": [
-        "REQ-3"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-add-a-privacy-policy-link-in-the-footer-section-of-frontend-src-components-layout-tsx-that-navigates-to-privacy-policy-placed-alongside-or-near-the-existing-terms-of-use-link",
-      "title": "Add a 'Privacy Policy' link in the footer section of frontend/src/components/Layout.tsx that navigates to /privacy-policy, placed alongside or near the existing 'Terms of Use' link.",
-      "reqIds": [
-        "REQ-4"
-      ],
-      "version": 1
     }
   ],
-  "new_feature_requests": [
-    {
-      "id": "AR-1",
-      "summary": "Privacy Policy page with Stack Teacher branding, updated contact info (support@stackteacher.com, 30 N Gould St Ste N Sheridan WY, phone 1234567890), and styled cookies table",
-      "reqIds": [],
-      "status": "pending"
-    }
-  ],
+  "new_feature_requests": [],
   "gameProjectType": "none",
   "projectName": "Stack Teacher",
   "clarification_mode": "instant",

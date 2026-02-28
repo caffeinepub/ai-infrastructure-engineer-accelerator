@@ -1,95 +1,32 @@
 {
   "kind": "build_request",
-  "title": "Add Privacy Policy page with Stack Teacher branding and styled cookies table",
-  "projectName": "Stack Teacher",
+  "title": "Replace compliance email with support email",
   "priority": "normal",
   "requirements": [
     {
       "id": "REQ-1",
-      "text": "Create a new PrivacyPolicyPage component at frontend/src/pages/PrivacyPolicyPage.tsx containing the full Privacy Policy content with all branding references using 'Stack Teacher' and 'stackteacher.com' (no 'Careerist' or 'careerist.com' references anywhere). All email references must use support@stackteacher.com and compliance@stackteacher.com. The physical address must be '30 N Gould St Ste N, Sheridan, WY 82801, USA'. The phone number must be '1234567890'. The page layout and typography should match the existing TermsOfUsePage.tsx style.",
+      "text": "Replace all occurrences of 'compliance@stackteacher.com' with 'support@stackteacher.com' across all frontend source files.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1",
-          "msg-2",
-          "msg-3",
           "msg-4"
+        ],
+        "quotes": [
+          "replace compliance@stackteacher.com with support@stackteacher.com"
         ]
       },
       "acceptanceCriteria": [
-        "No occurrences of 'Careerist', 'careerist.com', or 'support@careerist.com' appear anywhere on the page",
-        "All email addresses show as support@stackteacher.com or compliance@stackteacher.com",
-        "Address displays as '30 N Gould St Ste N, Sheridan, WY 82801, USA'",
-        "Phone number displays as '1234567890'",
-        "Brand name 'Stack Teacher' is used consistently throughout",
-        "Page renders without errors and matches the visual style of TermsOfUsePage"
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "text": "Within the PrivacyPolicyPage, replace any plain-text or prose cookie descriptions with a styled HTML table that lists cookie categories, cookie names, purpose, and duration/expiry. The table must use Tailwind CSS classes consistent with the site's design system (e.g., bordered cells, alternating row shading, responsive overflow-x-auto wrapper).",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-2",
-          "msg-3",
-          "msg-4"
-        ]
-      },
-      "acceptanceCriteria": [
-        "A visually styled cookies table is present in the Cookies section of the Privacy Policy page",
-        "Table includes columns for at minimum: Cookie Name/Type, Purpose, and Duration",
-        "Table uses Tailwind CSS classes for borders, padding, and alternating row colors",
-        "Table is wrapped in an overflow-x-auto container for mobile responsiveness"
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "text": "Register a new /privacy-policy route in frontend/src/App.tsx that renders the PrivacyPolicyPage component, following the same routing pattern used for the existing /terms route.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1",
-          "msg-2",
-          "msg-3",
-          "msg-4"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Navigating to /privacy-policy renders the PrivacyPolicyPage",
-        "The route is defined inside the shared Layout root route, consistent with all other routes",
-        "No existing routes are broken"
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "text": "Add a 'Privacy Policy' link in the footer section of frontend/src/components/Layout.tsx that navigates to /privacy-policy, placed alongside or near the existing 'Terms of Use' link.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1",
-          "msg-2",
-          "msg-3",
-          "msg-4"
-        ]
-      },
-      "acceptanceCriteria": [
-        "A 'Privacy Policy' link is visible in the footer",
-        "Clicking the link navigates to /privacy-policy",
-        "The link styling is consistent with the existing 'Terms of Use' footer link"
+        "No instance of 'compliance@stackteacher.com' remains anywhere in the frontend source files.",
+        "All locations that previously showed 'compliance@stackteacher.com' now display 'support@stackteacher.com'."
       ]
     }
   ],
   "constraints": [
-    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui/",
-    "Do not change the backend schema or any backend logic",
-    "All brand references must be 'Stack Teacher' — never 'Careerist'"
+    "Do not change any other email addresses or contact information."
   ],
   "nonGoals": [
-    "Editing or modifying the existing TermsOfUsePage",
-    "Adding any backend persistence for the Privacy Policy content",
-    "Adding authentication or gating to the Privacy Policy page",
-    "Creating any new images or static assets"
+    "Modifying any backend logic or data models.",
+    "Changing any other branding or content beyond the specified email address."
   ],
   "imageRequirements": {
     "required": [],

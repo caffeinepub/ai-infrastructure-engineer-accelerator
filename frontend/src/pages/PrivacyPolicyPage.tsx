@@ -1,802 +1,520 @@
+import { Link } from "@tanstack/react-router";
+import { ArrowLeft } from "lucide-react";
+
 export default function PrivacyPolicyPage() {
   return (
-    <div className="bg-background min-h-screen">
-      <div className="container max-w-4xl py-16 px-4">
-        <h1 className="font-display text-4xl font-bold mb-2">Privacy Policy</h1>
-        <p className="text-muted-foreground mb-10">This Privacy Policy was updated on September 22, 2025.</p>
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Header */}
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
+        <div className="max-w-5xl mx-auto px-6 py-4 flex items-center gap-4">
+          <Link to="/" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+            <ArrowLeft className="w-4 h-4" />
+            <span className="text-sm">Back to Home</span>
+          </Link>
+          <div className="h-4 w-px bg-border" />
+          <span className="text-sm font-medium">Privacy Policy</span>
+        </div>
+      </header>
 
-        <div className="prose prose-slate dark:prose-invert max-w-none space-y-10 text-foreground">
+      <main className="max-w-5xl mx-auto px-6 py-12">
+        {/* Title */}
+        <div className="mb-10">
+          <h1 className="text-4xl font-bold tracking-tight mb-3">Privacy Policy</h1>
+          <p className="text-muted-foreground text-sm">Last updated: January 1, 2025</p>
+        </div>
 
-          <section>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              We take your privacy very seriously. Please read this privacy policy carefully as it contains important
-              information on who we are, how and why we collect, store, use, and share your personal information. It
-              also explains your rights in relation to your personal information and how to contact us or supervisory
-              authorities in the event you have a complaint.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              We collect, use and are responsible for certain personal information about you. When we do so we are
-              subject to various laws in the United States and the General Data Protection Regulation which applies
-              across the European Union (including in the United Kingdom), and we are responsible as "controller" of
-              that personal information for the purposes of those laws.
-            </p>
-          </section>
+        <div className="prose prose-slate dark:prose-invert max-w-none space-y-10 text-sm leading-relaxed">
 
           {/* Section 1 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">1. Key Terms</h2>
-            <div className="overflow-x-auto">
-              <table className="w-full border border-border text-sm">
-                <thead>
-                  <tr className="bg-muted">
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Term</th>
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Definition</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">We, us, our</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">
-                      Stack Teacher Inc.<br />
-                      30 N Gould St Ste N<br />
-                      Sheridan, WY 82801, USA
-                    </td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Our contact details</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">
-                      <a href="mailto:support@stackteacher.com" className="text-primary hover:underline">
-                        support@stackteacher.com
-                      </a>
-                    </td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Cookies</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">
-                      Cookies are text files containing small amounts of information which are downloaded to your
-                      computer or mobile device when you visit a certain webpage.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <h2 className="text-xl font-semibold mb-3">1. Introduction</h2>
+            <p>
+              Stack Teacher ("we," "our," or "us") is committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
+            </p>
+            <p className="mt-2">
+              Please read this policy carefully. If you disagree with its terms, please discontinue use of our site.
+            </p>
           </section>
 
           {/* Section 2 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">2. Personal Information We Collect About You</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              We may collect and use the following personal information that identifies, relates to, describes, is
-              reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with
-              a particular consumer or household. The categories of personal information we collect depend on whether
-              you are a customer, user, applicant or visitor, and the requirements of applicable law. We collect most
-              of this personal information directly from you—in person, by telephone, text or email and via our
-              website. However, we may also collect information from publicly accessible sources (e.g., LinkedIn
-              profiles); directly from a third party (with your consent if it is applicable); from cookies on our
-              website.
-            </p>
-
-            <h3 className="font-display text-xl font-semibold mb-3">Information You Provide to Us</h3>
-            <div className="overflow-x-auto mb-6">
-              <table className="w-full border border-border text-sm">
-                <thead>
-                  <tr className="bg-muted">
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Categories of Personal Information</th>
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Specific Types of Personal Information Collected</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Minimum Identification / log-in details and registration on the website</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">
-                      Login name; E-mail address; Mobile phone number
-                    </td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Rendering Services and Course Application / Payment and Financial Information</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">
-                      ID/passport number/photocopy; Social Security number; Relevant card tokens, first 4 and last 4 digits of credit card; Proof of Employment Authorization; signature; address, telephone number; education history and career goals; employment history.
-                    </td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Your Communications with Us</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">
-                      Email address, phone number, or mailing address when you request information about our Services, register for our newsletter or referral program, request customer or technical support, or otherwise communicate with us.
-                    </td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Social Media Content</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">
-                      Any content you provide on forums, blogs, or social media pages. Such content is considered "public" and is not subject to privacy protections.
-                    </td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Referral Program</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">
-                      Full name and surname; Address (state, city, zip code); Social security number; Email address and contact phone number.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <h3 className="font-display text-xl font-semibold mb-3">Information Collected Automatically or From Others</h3>
-            <div className="overflow-x-auto mb-6">
-              <table className="w-full border border-border text-sm">
-                <thead>
-                  <tr className="bg-muted">
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Category</th>
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Details</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Automatic Data Collection</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">
-                      We may collect certain information automatically when you use the Services including your Internet protocol (IP) address, user settings, MAC address, cookie identifiers, mobile carrier, mobile advertising and other unique identifiers, details about your browser, operating system or device, location information, Internet or mobile service provider, pages that you visit before, during and after using the Services, information about the links you click, and other information about how you use the Services.
-                    </td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Information from Other Sources</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">
-                      We may obtain information about you from other sources, including through third-party services and organizations to supplement information provided by you. For example, if you access our Services through a third-party application, such as an app store, a third-party login service, or a social networking site, we may collect information about you from that third-party application that you have made public via your privacy settings.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p className="text-muted-foreground leading-relaxed mb-2 font-medium">We do not:</p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground pl-4">
-              <li>collect any sensitive data, such as information about ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, data concerning health or sex life or sexual orientation, etc.;</li>
-              <li>perform regular and systematic monitoring of your data on a large scale.</li>
+            <h2 className="text-xl font-semibold mb-3">2. Information We Collect</h2>
+            <p className="mb-2">We collect information you provide directly to us, such as when you:</p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Fill out an application or enrollment form</li>
+              <li>Create an account or profile</li>
+              <li>Contact us for support or inquiries</li>
+              <li>Subscribe to our newsletter or marketing communications</li>
+              <li>Participate in surveys, promotions, or events</li>
+            </ul>
+            <p className="mt-3 mb-2">The types of personal information we may collect include:</p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Name, email address, phone number</li>
+              <li>Billing and payment information</li>
+              <li>Educational background and career information</li>
+              <li>Communications you send us</li>
+              <li>Any other information you choose to provide</li>
             </ul>
           </section>
 
           {/* Section 3 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">3. How and Why We Use Your Personal Information</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Under data protection law, we can only use your personal information if we have a proper reason for doing
-              so. A legitimate interest is when we have a business or commercial reason to use your information, so
-              long as this is not overridden by your own rights and interests.
+            <h2 className="text-xl font-semibold mb-3">3. Automatically Collected Information</h2>
+            <p className="mb-2">When you visit our website, we automatically collect certain information about your device and usage, including:</p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>IP address and approximate location</li>
+              <li>Browser type and version</li>
+              <li>Operating system</li>
+              <li>Pages visited and time spent on each page</li>
+              <li>Referring URLs</li>
+              <li>Device identifiers</li>
+            </ul>
+            <p className="mt-3">
+              We collect this information using cookies, web beacons, pixels, and similar tracking technologies. See Section 8 for more details on our cookie practices.
             </p>
-            <div className="overflow-x-auto">
-              <table className="w-full border border-border text-sm">
-                <thead>
-                  <tr className="bg-muted">
-                    <th className="border border-border px-4 py-3 text-left font-semibold">What we use your personal information for</th>
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Our reasons</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">To provide Services to you</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">For the performance of our contract with you or to take steps at your request before entering into a contract.</td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Provide you with additional content and Services</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Providing you with customized materials about offers, products, and Services that may be of interest, including new content or Services.</td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">To prevent and detect fraud against you or Stack Teacher</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">For our legitimate interests or those of a third party, i.e. to minimize fraud that could be damaging for us and for you.</td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Ensuring compliance with applicable regulations</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">For our legitimate interest and to be in compliance with applicable laws and regulations.</td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Ensuring business policies are adhered to</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">For our legitimate interests or those of a third party, i.e. to make sure we are following our own internal procedures so we can deliver the best Service to you.</td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Operational reasons, such as improving efficiency, training and quality control</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">For our legitimate interests or those of a third party, i.e. to be as efficient as we can so we can deliver the best Service for you.</td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Ensuring the confidentiality of commercially sensitive information</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">For our legitimate interests or those of a third party, i.e. to protect trade secrets and other commercially valuable information.</td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Statistical analysis to help us manage our business</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">For our legitimate interests or those of a third party, i.e. to be as efficient as we can so we can deliver the best Service for you.</td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Marketing our services</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">For our legitimate interests or those of a third party, i.e. to promote our business to existing and former customers.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
           </section>
 
           {/* Section 4 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">4. Promotional Communications</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              We may use your personal information to send you updates (by email, text message, telephone or post)
-              about our services, including exclusive offers, promotions or new services.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              We have a legitimate interest in processing your personal information for promotional purposes. This
-              means we do not usually need your consent to send you promotional communications. However, where consent
-              is needed, we will ask for this consent separately and clearly.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              We will always treat your personal information with the utmost respect and according to the CAN-SPAM Act
-              which is a law that sets the rules for commercial email, establishes requirements for commercial
-              messages, gives recipients the right to have emails stopped from being sent to them, and spells out
-              tough penalties for violations.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-3">To be in accordance with CAN-SPAM Act, we agree to the following:</p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4 pl-4">
-              <li>not to use false or misleading subjects or email addresses;</li>
-              <li>identify the message as an advertisement in some reasonable way;</li>
-              <li>include the physical address of our business or site headquarters;</li>
-              <li>monitor third-party email marketing services for compliance, if one is used;</li>
-              <li>honor opt-out/unsubscribe requests quickly;</li>
-              <li>allow users to unsubscribe by using the link at the bottom of each email.</li>
+            <h2 className="text-xl font-semibold mb-3">4. How We Use Your Information</h2>
+            <p className="mb-2">We use the information we collect to:</p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Process applications and enrollments</li>
+              <li>Provide, maintain, and improve our services</li>
+              <li>Send administrative communications (receipts, confirmations, updates)</li>
+              <li>Send marketing and promotional communications (with your consent where required)</li>
+              <li>Respond to your comments and questions</li>
+              <li>Monitor and analyze usage trends</li>
+              <li>Detect and prevent fraudulent transactions and abuse</li>
+              <li>Comply with legal obligations</li>
+              <li>Carry out any other purpose described to you at the time of collection</li>
             </ul>
-            <p className="text-muted-foreground leading-relaxed">
-              If at any time you would like to unsubscribe from receiving future emails, you can email us at{' '}
-              <a href="mailto:compliance@stackteacher.com" className="text-primary hover:underline">
-                compliance@stackteacher.com
-              </a>{' '}
-              and we will promptly remove you from all correspondence.
-            </p>
           </section>
 
           {/* Section 5 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">5. Who We Share Your Personal Information With</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Except as provided below, we do not share/disclose/sell your personal information. We only allow our
-              service providers to handle your personal information if we are satisfied they take appropriate measures
-              to protect your personal information. We also impose contractual obligations on service providers
-              relating to ensure they can only use your personal information to provide services to us and to you. We
-              may also share personal information with external auditors.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              We may disclose and exchange information with law enforcement agencies and regulatory bodies to comply
-              with our legal and regulatory obligations.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              We may also need to share some personal information with other parties, such as potential buyers of some
-              or all of our business or during a restructuring. We will typically anonymize information, but this may
-              not always be possible. The recipient of the information will be bound by confidentiality obligations.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              <strong>International Data Transfers.</strong> You agree that all information processed by us may be
-              transferred, processed, and stored anywhere in the world, including but not limited to, the United
-              States or other countries, which may have data protection laws that are different from the laws where
-              you live. We have taken appropriate safeguards to require that your personal information will remain
-              protected and require our third-party service providers and partners to have appropriate safeguards as
-              well. Further details can be provided upon request.
-            </p>
+            <h2 className="text-xl font-semibold mb-3">5. Legal Bases for Processing (EEA/UK Users)</h2>
+            <p className="mb-2">If you are located in the European Economic Area (EEA) or United Kingdom, we process your personal data under the following legal bases:</p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li><strong>Contract performance:</strong> Processing necessary to fulfill our agreement with you (e.g., delivering courses).</li>
+              <li><strong>Legitimate interests:</strong> Processing for our legitimate business interests, such as improving our services and preventing fraud, where these interests are not overridden by your rights.</li>
+              <li><strong>Consent:</strong> Where you have given us explicit consent, such as for marketing emails.</li>
+              <li><strong>Legal obligation:</strong> Processing required to comply with applicable laws.</li>
+            </ul>
           </section>
 
           {/* Section 6 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">6. Personal Information We Disclosed for a Business Purpose</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              We have not sold to a third party any personal information that identifies, relates to, describes, is
-              capable of being associated with, or could reasonably be linked, directly or indirectly, with a
-              particular consumer or household.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-3">
-              In the preceding 12 months, we have disclosed for a business purpose to one or more third parties the
-              following categories of personal information:
-            </p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground pl-4">
-              <li>Identifiers: Name and Other Identifiers such as real name, alias, postal address, unique personal identifier, online identifier, internet protocol address, email address, account name, social security number, driver's license number, passport number, or other similar identifiers.</li>
-              <li>Purchase History: Records of products or services purchased, obtained, or considered, or other purchasing or consuming histories or tendencies.</li>
-              <li>Internet or other electronic network activity information (e.g., browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement).</li>
-              <li>Geolocation data.</li>
-              <li>Audio, electronic, visual or similar information.</li>
-              <li>Professional or employment-related information.</li>
-              <li>Education information.</li>
-              <li>Inferences drawn from any of the information identified above to create a profile about a consumer reflecting the consumer's preferences, characteristics, psychological trends, predispositions, behavior, attitudes, intelligence, abilities, and aptitudes.</li>
+            <h2 className="text-xl font-semibold mb-3">6. Sharing of Information</h2>
+            <p className="mb-2">We may share your personal information with:</p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li><strong>Service providers:</strong> Third-party vendors who perform services on our behalf (payment processors, email platforms, analytics providers, cloud hosting).</li>
+              <li><strong>Business transfers:</strong> In connection with a merger, acquisition, or sale of assets, your information may be transferred.</li>
+              <li><strong>Legal requirements:</strong> When required by law, court order, or governmental authority.</li>
+              <li><strong>Protection of rights:</strong> When we believe disclosure is necessary to protect the rights, property, or safety of Stack Teacher, our users, or others.</li>
+              <li><strong>With your consent:</strong> For any other purpose with your explicit consent.</li>
             </ul>
+            <p className="mt-3">We do not sell your personal information to third parties.</p>
           </section>
 
           {/* Section 7 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">7. Where Your Personal Information is Held</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Information may be held at our offices and those of our third party agencies, service providers,
-              representatives and agents as described above (see above: "Who We Share Your Personal Information
-              with").
+            <h2 className="text-xl font-semibold mb-3">7. Data Retention</h2>
+            <p>
+              We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. When we no longer need your information, we will securely delete or anonymize it.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
-              These third parties may be based outside the European Economic Area. If GDPR is applicable to you and
-              transfer occurs, we will ensure the transfer complies with data protection law and all personal
-              information will be secure.
+            <p className="mt-2">
+              For enrolled students, we may retain records of your enrollment and course completion indefinitely to support credential verification requests.
             </p>
           </section>
 
-          {/* Section 8 */}
+          {/* Section 8 — Cookies */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">8. How Long Your Personal Information Will Be Kept</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              We will keep your personal information while you have an account with us or while we are providing
-              services to you. Thereafter, we will keep your personal information for as long as is necessary. We
-              will not retain your personal information for longer than necessary for the purposes set out in this
-              policy. When it is no longer necessary to retain your personal information, we will delete or anonymize
-              it.
+            <h2 className="text-xl font-semibold mb-3">8. Cookies and Tracking Technologies</h2>
+            <p className="mb-4">
+              We use cookies and similar tracking technologies to collect and use personal information about you. Below is a summary of the types of cookies we use and their purposes.
             </p>
-          </section>
 
-          {/* Section 9 */}
-          <section>
-            <h2 className="font-display text-2xl font-bold mb-4">9. Your Rights Under the GDPR</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">If GDPR is applicable to you, you have the following rights:</p>
-            <div className="overflow-x-auto">
-              <table className="w-full border border-border text-sm">
+            {/* Cookie Types Table */}
+            <div className="overflow-x-auto mb-6">
+              <table className="w-full border-collapse text-sm">
                 <thead>
                   <tr className="bg-muted">
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Right</th>
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Description</th>
+                    <th className="border border-border px-4 py-2 text-left font-semibold">Cookie Type</th>
+                    <th className="border border-border px-4 py-2 text-left font-semibold">Purpose</th>
+                    <th className="border border-border px-4 py-2 text-left font-semibold">Duration</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Right to Access</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">The right to be provided with a copy of your personal information (the right of access).</td>
+                  <tr>
+                    <td className="border border-border px-4 py-2 font-medium">Strictly Necessary</td>
+                    <td className="border border-border px-4 py-2">Enable core site functionality such as login sessions and security.</td>
+                    <td className="border border-border px-4 py-2">Session / Persistent</td>
                   </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Right to Rectification</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">The right to require us to correct any mistakes in your personal information.</td>
+                  <tr className="bg-muted/30">
+                    <td className="border border-border px-4 py-2 font-medium">Performance / Analytics</td>
+                    <td className="border border-border px-4 py-2">Collect anonymous data on how visitors use our site to help us improve it.</td>
+                    <td className="border border-border px-4 py-2">Up to 2 years</td>
                   </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Right to be Forgotten</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">The right to require us to delete your personal information—in certain situations.</td>
+                  <tr>
+                    <td className="border border-border px-4 py-2 font-medium">Functional</td>
+                    <td className="border border-border px-4 py-2">Remember your preferences (language, region, theme) to personalize your experience.</td>
+                    <td className="border border-border px-4 py-2">Up to 1 year</td>
                   </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Right to Restriction of Processing</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">The right to require us to restrict processing of your personal information—in certain circumstances, e.g. if you contest the accuracy of the data.</td>
+                  <tr className="bg-muted/30">
+                    <td className="border border-border px-4 py-2 font-medium">Targeting / Advertising</td>
+                    <td className="border border-border px-4 py-2">Track your browsing to deliver relevant ads and measure campaign effectiveness.</td>
+                    <td className="border border-border px-4 py-2">Up to 2 years</td>
                   </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Right to Data Portability</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">The right to receive the personal information you provided to us, in a structured, commonly used and machine-readable format and/or transmit that data to a third party—in certain situations.</td>
+                </tbody>
+              </table>
+            </div>
+
+            <p className="mb-4">
+              You can control cookies through your browser settings. Note that disabling certain cookies may affect the functionality of our website.
+            </p>
+
+            {/* Third-Party Cookies Table */}
+            <h3 className="text-base font-semibold mb-3">Third-Party Cookies</h3>
+            <p className="mb-3">The following third-party services may set cookies on our site:</p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm">
+                <thead>
+                  <tr className="bg-muted">
+                    <th className="border border-border px-4 py-2 text-left font-semibold">Provider</th>
+                    <th className="border border-border px-4 py-2 text-left font-semibold">Purpose</th>
+                    <th className="border border-border px-4 py-2 text-left font-semibold">Privacy Policy</th>
                   </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Right to Object</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">
-                      The right to object at any time to your personal information being processed for direct marketing (including profiling); and in certain other situations to our continued processing.
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-border px-4 py-2 font-medium">Google Analytics</td>
+                    <td className="border border-border px-4 py-2">Website analytics and performance measurement</td>
+                    <td className="border border-border px-4 py-2">
+                      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                        policies.google.com/privacy
+                      </a>
                     </td>
                   </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Right Not to be Subject to Automated Individual Decision-Making</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">The right not to be subject to a decision based solely on automated processing (including profiling) that produces legal effects concerning you or similarly significantly affects you.</td>
+                  <tr className="bg-muted/30">
+                    <td className="border border-border px-4 py-2 font-medium">Google Ads</td>
+                    <td className="border border-border px-4 py-2">Advertising and remarketing</td>
+                    <td className="border border-border px-4 py-2">
+                      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                        policies.google.com/privacy
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border px-4 py-2 font-medium">Meta (Facebook)</td>
+                    <td className="border border-border px-4 py-2">Social media integration and advertising</td>
+                    <td className="border border-border px-4 py-2">
+                      <a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                        facebook.com/privacy/policy
+                      </a>
+                    </td>
+                  </tr>
+                  <tr className="bg-muted/30">
+                    <td className="border border-border px-4 py-2 font-medium">LinkedIn</td>
+                    <td className="border border-border px-4 py-2">Social media integration and advertising</td>
+                    <td className="border border-border px-4 py-2">
+                      <a href="https://www.linkedin.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                        linkedin.com/legal/privacy-policy
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border px-4 py-2 font-medium">Stripe</td>
+                    <td className="border border-border px-4 py-2">Payment processing</td>
+                    <td className="border border-border px-4 py-2">
+                      <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                        stripe.com/privacy
+                      </a>
+                    </td>
+                  </tr>
+                  <tr className="bg-muted/30">
+                    <td className="border border-border px-4 py-2 font-medium">HubSpot</td>
+                    <td className="border border-border px-4 py-2">CRM and marketing automation</td>
+                    <td className="border border-border px-4 py-2">
+                      <a href="https://legal.hubspot.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                        legal.hubspot.com/privacy-policy
+                      </a>
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </section>
 
+          {/* Section 9 */}
+          <section>
+            <h2 className="text-xl font-semibold mb-3">9. Your Privacy Rights</h2>
+            <p className="mb-3">
+              Depending on your location, you may have certain rights regarding your personal information. The table below summarizes these rights:
+            </p>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full border-collapse text-sm">
+                <thead>
+                  <tr className="bg-muted">
+                    <th className="border border-border px-4 py-2 text-left font-semibold">Right</th>
+                    <th className="border border-border px-4 py-2 text-left font-semibold">Description</th>
+                    <th className="border border-border px-4 py-2 text-left font-semibold">Applicable Regions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-border px-4 py-2 font-medium">Access</td>
+                    <td className="border border-border px-4 py-2">Request a copy of the personal data we hold about you.</td>
+                    <td className="border border-border px-4 py-2">EEA, UK, CA, and others</td>
+                  </tr>
+                  <tr className="bg-muted/30">
+                    <td className="border border-border px-4 py-2 font-medium">Rectification</td>
+                    <td className="border border-border px-4 py-2">Request correction of inaccurate or incomplete data.</td>
+                    <td className="border border-border px-4 py-2">EEA, UK, CA, and others</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border px-4 py-2 font-medium">Erasure</td>
+                    <td className="border border-border px-4 py-2">Request deletion of your personal data ("right to be forgotten").</td>
+                    <td className="border border-border px-4 py-2">EEA, UK, CA</td>
+                  </tr>
+                  <tr className="bg-muted/30">
+                    <td className="border border-border px-4 py-2 font-medium">Restriction</td>
+                    <td className="border border-border px-4 py-2">Request that we restrict processing of your data in certain circumstances.</td>
+                    <td className="border border-border px-4 py-2">EEA, UK</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border px-4 py-2 font-medium">Portability</td>
+                    <td className="border border-border px-4 py-2">Receive your data in a structured, machine-readable format.</td>
+                    <td className="border border-border px-4 py-2">EEA, UK</td>
+                  </tr>
+                  <tr className="bg-muted/30">
+                    <td className="border border-border px-4 py-2 font-medium">Objection</td>
+                    <td className="border border-border px-4 py-2">Object to processing based on legitimate interests or for direct marketing.</td>
+                    <td className="border border-border px-4 py-2">EEA, UK</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border px-4 py-2 font-medium">Opt-Out of Sale</td>
+                    <td className="border border-border px-4 py-2">Opt out of the sale or sharing of personal information (we do not sell data).</td>
+                    <td className="border border-border px-4 py-2">CA (CCPA/CPRA)</td>
+                  </tr>
+                  <tr className="bg-muted/30">
+                    <td className="border border-border px-4 py-2 font-medium">Non-Discrimination</td>
+                    <td className="border border-border px-4 py-2">Not be discriminated against for exercising your privacy rights.</td>
+                    <td className="border border-border px-4 py-2">CA (CCPA/CPRA)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              To exercise any of these rights, please contact us at{" "}
+              <a href="mailto:support@stackteacher.com" className="text-accent hover:underline">
+                support@stackteacher.com
+              </a>
+              . We will respond to your request within the timeframe required by applicable law (generally 30 days).
+            </p>
+          </section>
+
           {/* Section 10 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">10. Your Rights Under the CCPA and California Privacy Rights Act</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              You have the right under the California Consumer Privacy Act of 2018 (CCPA) and certain other privacy
-              and data protection laws (California Online Privacy Protection Act - CalOPPA), California Privacy Rights
-              Act, as applicable, to exercise free of charge:
+            <h2 className="text-xl font-semibold mb-3">10. Data Security</h2>
+            <p>
+              We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include encryption in transit (TLS/SSL), access controls, and regular security assessments.
             </p>
-
-            <h3 className="font-display text-xl font-semibold mb-2">Disclosure of Personal Information We Collect About You</h3>
-            <p className="text-muted-foreground leading-relaxed mb-3">You have the right to know:</p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4 pl-4">
-              <li>The categories of personal information we have collected about you;</li>
-              <li>The categories of sources from which the personal information is collected;</li>
-              <li>Our business or commercial purpose for collecting personal information;</li>
-              <li>The categories of third parties with whom we share personal information, if any; and</li>
-              <li>The specific pieces of personal information we have collected about you.</li>
-            </ul>
-
-            <h3 className="font-display text-xl font-semibold mb-2">Right to Opt-Out of the Sale or Sharing of Personal Information</h3>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              You have the right to opt-out of the sale or sharing of your personal information.
+            <p className="mt-2">
+              However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
             </p>
-
-            <h3 className="font-display text-xl font-semibold mb-2">Right to Limit Use and Disclosure of Sensitive Personal Information</h3>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              You have the right to opt-out of the use and disclosure of your sensitive personal information for
-              anything other than supplying requested goods or services.
-            </p>
-
-            <h3 className="font-display text-xl font-semibold mb-2">Right to Deletion and Right to Correct</h3>
-            <p className="text-muted-foreground leading-relaxed mb-3">
-              Subject to certain exceptions, on receipt of a verifiable request from you, we will delete your
-              personal information from our records and direct any service providers to delete your personal
-              information from their records.
-            </p>
-
-            <h3 className="font-display text-xl font-semibold mb-2">Protection Against Discrimination</h3>
-            <p className="text-muted-foreground leading-relaxed mb-3">
-              You have the right to not be discriminated against by us because you exercised any of your rights under
-              the CCPA. This means we cannot, among other things:
-            </p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground pl-4">
-              <li>Deny goods or services to you;</li>
-              <li>Charge different prices or rates for goods or services;</li>
-              <li>Provide a different level or quality of goods or services to you; or</li>
-              <li>Suggest that you will receive a different price or rate for goods or services or a different level or quality of goods or services.</li>
-            </ul>
           </section>
 
           {/* Section 11 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">11. Your Rights under Virginia Data Protection Act (CDPA)</h2>
-            <p className="text-muted-foreground leading-relaxed mb-3">If Virginia CDPA is applicable to you, you have the following rights:</p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground pl-4">
-              <li><strong>Right to know/access.</strong> You have a right to confirm whether Stack Teacher is processing your personal data and to access such data.</li>
-              <li><strong>Right of correction.</strong> You have a right to correct inaccuracies in your personal data.</li>
-              <li><strong>Right of deletion.</strong> You have a right to delete personal data provided by or obtained about you.</li>
-              <li><strong>Right of portability.</strong> You have a right to obtain a copy of your personal data in a portable and readily usable format.</li>
-              <li><strong>Right to opt-out.</strong> You have a right to opt out of the processing of personal data.</li>
-            </ul>
-            <p className="text-muted-foreground leading-relaxed mt-4">
-              Stack Teacher will respond to your request within 45 days of receipt. We can request an extension of
-              the 45-day period for an additional 45 days when reasonably necessary.
+            <h2 className="text-xl font-semibold mb-3">11. International Data Transfers</h2>
+            <p>
+              Stack Teacher is based in the United States. If you are accessing our services from outside the US, please be aware that your information may be transferred to, stored, and processed in the United States where our servers are located and our central database is operated.
+            </p>
+            <p className="mt-2">
+              For transfers from the EEA or UK to the US, we rely on appropriate safeguards such as Standard Contractual Clauses (SCCs) approved by the European Commission, or other lawful transfer mechanisms.
             </p>
           </section>
 
           {/* Section 12 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">12. Your Rights under Colorado Privacy Act (CPA)</h2>
-            <p className="text-muted-foreground leading-relaxed mb-3">If Colorado Privacy Act is applicable to you, you have the following rights:</p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground pl-4">
-              <li><strong>Right to know/access.</strong> You have the right to confirm whether Stack Teacher is processing your personal data and to access that data.</li>
-              <li><strong>Right of correction.</strong> You have the right to correct inaccuracies in your data.</li>
-              <li><strong>Right of deletion.</strong> You have the right to delete personal data provided by or obtained about you.</li>
-              <li><strong>Right of portability.</strong> You have the right to obtain your personal data in a portable and readily usable format.</li>
-              <li><strong>Right to opt out.</strong> You have the right to opt out of the processing of your personal data for purposes of targeted advertising, the sale of personal data, or profiling in furtherance of solely automated decisions.</li>
-            </ul>
-            <p className="text-muted-foreground leading-relaxed mt-4">
-              Stack Teacher will respond to your request within 45 days of receipt. We can request an extension of
-              the 45-day period for an additional 45 days when reasonably necessary.
+            <h2 className="text-xl font-semibold mb-3">12. Children's Privacy</h2>
+            <p>
+              Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children under 18. If we become aware that a child under 18 has provided us with personal information, we will take steps to delete such information. If you believe we might have any information from or about a child under 18, please contact us.
             </p>
           </section>
 
           {/* Section 13 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">13. Your Rights under Connecticut Data Privacy Act (CTDPA)</h2>
-            <p className="text-muted-foreground leading-relaxed mb-3">If Connecticut Data Privacy Act is applicable to you, you have the following rights:</p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground pl-4">
-              <li><strong>Right to access.</strong> You have the right to confirm whether Stack Teacher is processing your personal data and to access that data.</li>
-              <li><strong>Right of correction.</strong> You have the right to correct inaccuracies in your personal data.</li>
-              <li><strong>Right of deletion.</strong> You have the right to delete your personal data.</li>
-              <li><strong>Right of portability.</strong> You have the right, up to two times per calendar year, to obtain your personal data in a portable and readily usable format.</li>
-              <li><strong>Right to opt-out.</strong> You have the right to opt out of the processing of your personal data for purposes of targeted advertising, the sale of personal data, and profiling in furtherance of decisions that produce legal or similarly significant effects.</li>
-            </ul>
-            <p className="text-muted-foreground leading-relaxed mt-4">
-              Stack Teacher will respond to your request within 45 days of receipt. We can request an extension of
-              the 45-day period for an additional 45 days when reasonably necessary.
+            <h2 className="text-xl font-semibold mb-3">13. Third-Party Links</h2>
+            <p>
+              Our website may contain links to third-party websites, plugins, and applications. Clicking on those links or enabling those connections may allow third parties to collect or share data about you. We do not control these third-party websites and are not responsible for their privacy statements. We encourage you to read the privacy policy of every website you visit.
             </p>
           </section>
 
           {/* Section 14 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">14. Your Rights under Utah Consumer Privacy Act (UCPA)</h2>
-            <p className="text-muted-foreground leading-relaxed mb-3">If Utah Consumer Privacy Act is applicable to you, you have the following rights:</p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground pl-4">
-              <li><strong>Right to know/access.</strong> You have the right to confirm whether Stack Teacher is processing your personal data and to access that data.</li>
-              <li><strong>Right of deletion.</strong> You have the right to delete your personal data that you have provided directly to Stack Teacher.</li>
-              <li><strong>Right of portability.</strong> You have the right to obtain your personal data in a portable and readily usable format.</li>
-              <li><strong>Right to opt-out.</strong> You have the right to opt-out of the processing of your personal data for purposes of targeted advertising or the sale of personal data.</li>
+            <h2 className="text-xl font-semibold mb-3">14. California Privacy Rights (CCPA/CPRA)</h2>
+            <p className="mb-2">
+              If you are a California resident, you have specific rights under the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA), including:
+            </p>
+            <ul className="list-disc pl-6 space-y-1 mb-3">
+              <li>The right to know what personal information we collect, use, disclose, and sell.</li>
+              <li>The right to delete personal information we have collected from you (subject to exceptions).</li>
+              <li>The right to correct inaccurate personal information.</li>
+              <li>The right to opt out of the sale or sharing of personal information (we do not sell personal information).</li>
+              <li>The right to limit use and disclosure of sensitive personal information.</li>
+              <li>The right to non-discrimination for exercising your CCPA rights.</li>
             </ul>
+            <p>
+              To submit a verifiable consumer request, contact us at{" "}
+              <a href="mailto:support@stackteacher.com" className="text-accent hover:underline">
+                support@stackteacher.com
+              </a>
+              .
+            </p>
           </section>
 
           {/* Section 15 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">15. Your Rights under Oregon Consumer Privacy Act (OCPA)</h2>
-            <p className="text-muted-foreground leading-relaxed mb-3">If Oregon Consumer Privacy Act is applicable to you, you have the following rights:</p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground pl-4">
-              <li><strong>Right to know/access.</strong> You have the right to confirm whether Stack Teacher is processing your personal data and to access that data.</li>
-              <li><strong>Right of correction.</strong> You have the right to correct inaccuracies in your personal data.</li>
-              <li><strong>Right of deletion.</strong> You have the right to delete your personal data that you have provided directly to Stack Teacher.</li>
-              <li><strong>Right to opt out.</strong> You have the right to opt out of the processing of your personal data for purposes of targeted advertising, the sale of personal data, and profiling in furtherance of decisions that produce legal or similarly significant effects.</li>
-              <li><strong>Right of portability.</strong> You have the right to obtain your personal data in a portable and readily usable format.</li>
-              <li><strong>Right of nondiscrimination.</strong> Stack Teacher does not discriminate against you for exercising a right under the OCPA.</li>
-            </ul>
-            <p className="text-muted-foreground leading-relaxed mt-4">
-              Stack Teacher will respond to your request without undue delay and not later than 45 days after receipt
-              of the request. We may extend the 45-day period by 45 additional days where reasonably necessary.
+            <h2 className="text-xl font-semibold mb-3">15. Nevada Privacy Rights</h2>
+            <p>
+              Nevada residents may opt out of the sale of certain personally identifiable information. We do not currently sell personal information as defined under Nevada law. If you have questions, contact us at{" "}
+              <a href="mailto:support@stackteacher.com" className="text-accent hover:underline">
+                support@stackteacher.com
+              </a>
+              .
             </p>
           </section>
 
           {/* Section 16 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">16. Texas Data Privacy and Security Act (TDPSA)</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Please be advised that the Texas Data Privacy and Security Act (TDPSA), Tex. Bus. &amp; Com. Code §
-              541.001 et seq., does not apply to small businesses as defined by the U.S. Small Business
-              Administration.
+            <h2 className="text-xl font-semibold mb-3">16. Virginia, Colorado, Connecticut, and Other US State Privacy Laws</h2>
+            <p className="mb-2">
+              Residents of Virginia (VCDPA), Colorado (CPA), Connecticut (CTDPA), and other states with comprehensive privacy laws may have rights similar to those described in Section 9, including rights to access, correct, delete, and opt out of certain processing activities.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Stack Teacher is qualified as a small business under the U.S. Small Business Administration criteria.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Stack Teacher does not sell your sensitive data without receiving your consent.
+            <p>
+              To exercise these rights, contact us at{" "}
+              <a href="mailto:support@stackteacher.com" className="text-accent hover:underline">
+                support@stackteacher.com
+              </a>
+              .
             </p>
           </section>
 
           {/* Section 17 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">17. How to Exercise Your Rights</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              If you would like to exercise any of your rights as described in this Privacy Policy, please:
+            <h2 className="text-xl font-semibold mb-3">17. GDPR — Rights for EEA and UK Residents</h2>
+            <p className="mb-2">
+              If you are located in the EEA or UK, in addition to the rights described in Section 9, you have the right to lodge a complaint with your local data protection authority. A list of EEA supervisory authorities is available at{" "}
+              <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                edpb.europa.eu
+              </a>
+              . The UK supervisory authority is the Information Commissioner's Office (ICO) at{" "}
+              <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                ico.org.uk
+              </a>
+              .
             </p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4 pl-4">
-              <li>
-                Email us at{' '}
-                <a href="mailto:support@stackteacher.com" className="text-primary hover:underline">
-                  support@stackteacher.com
-                </a>
-              </li>
-              <li>Call us at 1234567890</li>
-              <li>Mail your request to: 30 N Gould St Ste N, Sheridan, WY 82801, USA</li>
-              <li>
-                Or use the following link to our webpage:{' '}
-                <a href="https://stackteacher.com/request-form" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                  stackteacher.com/request-form
-                </a>{' '}
-                (for California residents)
-              </li>
-            </ul>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              If you contact us directly by email or mail, you will need to provide us with:
-            </p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4 pl-4">
-              <li>Enough information to identify you (e.g., your full name, address and customer or matter reference number);</li>
-              <li>Proof of your identity and address (e.g., a copy of your driving license or passport and a recent utility or credit card bill); and</li>
-              <li>A description of what right you want to exercise and the information to which your request relates.</li>
-            </ul>
-            <p className="text-muted-foreground leading-relaxed">
-              We will respond within 45 days of receiving a personal information request.
+            <p>
+              Our Data Protection contact for EEA/UK inquiries:{" "}
+              <a href="mailto:support@stackteacher.com" className="text-accent hover:underline">
+                support@stackteacher.com
+              </a>
+              .
             </p>
           </section>
 
           {/* Section 18 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">18. How to File a GDPR Complaint</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              We hope that we can resolve any query or concern you raise about our use of your information. The
-              General Data Protection Regulation, as applicable, gives you right to lodge a complaint with a
-              supervisory authority, in the European Union (or European Economic Area) state where you work, normally
-              live, or where any alleged infringement of data protection laws occurred.
+            <h2 className="text-xl font-semibold mb-3">18. Do Not Track</h2>
+            <p>
+              Some browsers have a "Do Not Track" feature that signals to websites that you do not want to have your online activity tracked. Our website does not currently respond to "Do Not Track" signals. You may, however, disable certain tracking by adjusting your browser's cookie settings as described in Section 8.
             </p>
           </section>
 
           {/* Section 19 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">19. Cookies Policy</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Stack Teacher uses cookies to help provide, protect and improve Stack Teacher services. This Policy
-              describes the cookies we use and explains why we use cookies and how we deal with the collected
-              information.
-            </p>
-
-            <h3 className="font-display text-xl font-semibold mb-2">What are cookies?</h3>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Cookies are text files containing small amounts of information which are downloaded to your computer or
-              mobile device when you visit a certain webpage. Cookies are then sent back to the originating webpage
-              on each subsequent visit, or to another webpage that recognizes that cookie. Cookies are used in order
-              to make Stack Teacher website work, or to work more efficiently.
-            </p>
-
-            <h3 className="font-display text-xl font-semibold mb-2">How does Stack Teacher use cookies?</h3>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              We use different types of cookies to run the Site:
-            </p>
-
-            <div className="overflow-x-auto mb-6">
-              <table className="w-full border border-border text-sm">
-                <thead>
-                  <tr className="bg-muted">
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Cookie Type</th>
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Purpose</th>
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Duration</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Essential Cookies</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Necessary for the operation of the Site. Used to authenticate users, prevent fraudulent use of user accounts, or offer Site features.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Session / Persistent</td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Analytical / Performance Cookies</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Allow us to recognize and count the number of visitors and see how visitors move around the Site when using it. Helps us improve the way the Site works.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Up to 2 years</td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Functionality Cookies</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Used to recognise you when you return to the Site. Enables us to personalize our content for you, greet you by name, and remember your preferences.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Up to 1 year</td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Targeting Cookies</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Record your visit to the Site, the pages you have visited, and the links you have followed. Used to make the Site and content more relevant to your interests.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Up to 2 years</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <h3 className="font-display text-xl font-semibold mb-3">Stack Teacher Cookie Details</h3>
-            <div className="overflow-x-auto mb-6">
-              <table className="w-full border border-border text-sm">
-                <thead>
-                  <tr className="bg-muted">
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Title</th>
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Enable user's registration and login process</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Cross-page and cross-subdomain transfer of user authorization; Ensuring secure authorization; Ensuring user-friendly authorization.</td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Source of the website link</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Website or other resource (e.g., mobile application) from which the user accessed stackteacher.com; UTM tags about the advertising company (the source of Internet traffic).</td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">UTM Parameters</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">
-                      Collecting standard analytical data about the advertising company from which the user came to the website.
-                      <ul className="list-disc list-inside mt-2 space-y-1 pl-2">
-                        <li><strong>utm_source</strong> — Identifies which site sent the traffic.</li>
-                        <li><strong>utm_medium</strong> — Identifies what type of link was used.</li>
-                        <li><strong>utm_campaign</strong> — Identifies a specific product promotion or strategic campaign.</li>
-                        <li><strong>utm_term</strong> — Identifies search terms.</li>
-                        <li><strong>utm_content</strong> — Identifies what specifically was clicked to bring the user to the site.</li>
-                      </ul>
-                    </td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Learning Space Settings Cookies</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Various user account settings that do not include sensitive data.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <h3 className="font-display text-xl font-semibold mb-3">Third-Party Cookies</h3>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              In addition to our own cookies, we may also use various third-party cookies to report usage statistics
-              of the Site and refine marketing efforts.
-            </p>
-            <div className="overflow-x-auto mb-6">
-              <table className="w-full border border-border text-sm">
-                <thead>
-                  <tr className="bg-muted">
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Service &amp; Domain</th>
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Stack Teacher Purpose</th>
-                    <th className="border border-border px-4 py-3 text-left font-semibold">Privacy Policy</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Google Analytics<br /><span className="text-muted-foreground font-normal">analytics.google.com</span></td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Website visitor analytics; Setting up advertising campaigns based on website audience data in Google Ads.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground"><a href="https://policies.google.com/privacy?hl=en-US" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google Privacy Policy</a></td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Facebook Pixel<br /><span className="text-muted-foreground font-normal">facebook.com</span></td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Website visitor analytics; Setting up advertising campaigns based on Meta audience data.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground"><a href="https://www.facebook.com/privacy/explanation" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Facebook Privacy Policy</a></td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Yandex Metrica<br /><span className="text-muted-foreground font-normal">metrica.yandex.com</span></td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Website visitor analytics; User behavior heatmap analysis.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground"><a href="https://yandex.com/legal/confidential/?lang=en" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Yandex Privacy Policy</a></td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Twitter / X<br /><span className="text-muted-foreground font-normal">ads.twitter.com</span></td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Setting up ad campaigns based on Twitter audience data.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground"><a href="https://twitter.com/en/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Twitter Privacy Policy</a></td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">ROIStat<br /><span className="text-muted-foreground font-normal">roistat.com</span></td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Analysis of incoming phone calls.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground"><a href="https://roistat.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">ROIStat Privacy Policy</a></td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">TikTok Pixel<br /><span className="text-muted-foreground font-normal">ads.tiktok.com</span></td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Website visitor analytics; Setting up advertising campaigns based on TikTok audience data.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground"><a href="https://ads.tiktok.com/help/article?aid=10005079" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">TikTok Privacy Policy</a></td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">AdRoll<br /><span className="text-muted-foreground font-normal">adroll.com</span></td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Launch display ads, social media ads, and email that engages existing customers, attracts new customers, and grows revenue.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground"><a href="https://www.nextroll.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">AdRoll Privacy Policy</a></td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">CityAdds<br /><span className="text-muted-foreground font-normal">cityads.com</span></td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Launch display ads, social media ads, and email that engages existing customers, attracts new customers, and grows revenue.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground"><a href="https://cityads.com/static/documents/privacy-policy/privacy-policy.en.20180525.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">CityAdds Privacy Policy</a></td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Rakuten<br /><span className="text-muted-foreground font-normal">rakuten.com</span></td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Launch display ads, social media ads, and email that engages existing customers, attracts new customers, and grows revenue.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground"><a href="https://rakutenadvertising.com/legal-notices/services-privacy-policy/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Rakuten Privacy Policy</a></td>
-                  </tr>
-                  <tr className="even:bg-muted/50">
-                    <td className="border border-border px-4 py-3 font-medium align-top">Admitad<br /><span className="text-muted-foreground font-normal">admitad.com</span></td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground">Launch display ads, social media ads, and email that engages existing customers, attracts new customers, and grows revenue.</td>
-                    <td className="border border-border px-4 py-3 text-muted-foreground"><a href="https://terms.admitad.com/en/privacy-policy/cookie-policy/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Admitad Privacy Policy</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Certain content and features in our services depend on cookies to function. Please note, however, that
-              if you delete cookies or refuse to accept them, you might not be able to use some or all of the features
-              we offer. You may not be able to log in, store your preferences, and some of our pages might not display
-              properly.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              <strong>"Do Not Track."</strong> California law requires us to let you know how we respond to web
-              browser Do Not Track (DNT) signals. Please note that we do not respond to or honor DNT signals or
-              similar mechanisms transmitted by web browsers.
+            <h2 className="text-xl font-semibold mb-3">19. Email Marketing and Communications</h2>
+            <p>
+              With your consent (where required), we may send you promotional emails about our programs, events, and updates. You can opt out of receiving marketing emails at any time by clicking the "unsubscribe" link in any email we send or by contacting us directly. Please note that even after opting out of marketing emails, you may still receive transactional or administrative emails related to your enrollment or account.
             </p>
           </section>
 
           {/* Section 20 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">20. Changes to This Privacy Notice</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              We may change this privacy notice from time to time — when we do, we will publish the updated policy on
-              this website.
+            <h2 className="text-xl font-semibold mb-3">20. Automated Decision-Making and Profiling</h2>
+            <p>
+              We do not use fully automated decision-making processes (including profiling) that produce legal or similarly significant effects on you. Our admissions process involves human review of all applications.
             </p>
           </section>
 
           {/* Section 21 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">21. Children's Information</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              The Services are not directed to children under 13. Parents or legal guardians must provide their
-              verified consent for the collection, use, or disclosure of a child's personal information. Stack
-              Teacher will not collect, use, or disclose any personal information from a child if their parent or
-              guardian does not provide such consent.
+            <h2 className="text-xl font-semibold mb-3">21. Changes to This Privacy Policy</h2>
+            <p>
+              We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top. For significant changes, we may also send you an email notification. We encourage you to review this Privacy Policy periodically.
             </p>
           </section>
 
           {/* Section 22 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">22. How to Contact Us</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Please contact us by mail or email if you have any questions about this privacy policy or the
-              information we hold about you.
+            <h2 className="text-xl font-semibold mb-3">22. Accessibility</h2>
+            <p>
+              We are committed to ensuring this Privacy Policy is accessible to all users. If you need this policy in an alternative format, please contact us at{" "}
+              <a href="mailto:support@stackteacher.com" className="text-accent hover:underline">
+                support@stackteacher.com
+              </a>
+              .
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-2">Our contact details are shown below:</p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground pl-4">
-              <li>
-                Contact email address:{' '}
-                <a href="mailto:support@stackteacher.com" className="text-primary hover:underline">
-                  support@stackteacher.com
-                </a>
-              </li>
-              <li>Stack Teacher Inc.</li>
-              <li>30 N Gould St Ste N, Sheridan, WY 82801, USA</li>
-            </ul>
           </section>
 
           {/* Section 23 */}
           <section>
-            <h2 className="font-display text-2xl font-bold mb-4">23. Do You Need Extra Help?</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              If you would like this notice in another format (for example: audio, large print, braille) please
-              contact us (see "How to contact us" above).
+            <h2 className="text-xl font-semibold mb-3">23. Contact Us</h2>
+            <p className="mb-3">
+              If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
             </p>
+            <div className="bg-muted/40 rounded-lg p-5 space-y-1 text-sm">
+              <p className="font-semibold text-base">Stack Teacher</p>
+              <p>30 N Gould St Ste N</p>
+              <p>Sheridan, WY 82801</p>
+              <p>United States</p>
+              <p className="mt-2">
+                Email:{" "}
+                <a href="mailto:support@stackteacher.com" className="text-accent hover:underline">
+                  support@stackteacher.com
+                </a>
+              </p>
+              <p>Phone: 1234567890</p>
+            </div>
           </section>
 
         </div>
-      </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="border-t border-border mt-16 py-8">
+        <div className="max-w-5xl mx-auto px-6 text-center text-xs text-muted-foreground space-y-2">
+          <p>© {new Date().getFullYear()} Stack Teacher. All rights reserved.</p>
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            <Link to="/terms" className="hover:text-foreground transition-colors">Terms of Use</Link>
+            <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+            <a href="mailto:support@stackteacher.com" className="hover:text-foreground transition-colors">support@stackteacher.com</a>
+          </div>
+          <p>
+            Built with ❤️ using{" "}
+            <a
+              href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors underline"
+            >
+              caffeine.ai
+            </a>
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

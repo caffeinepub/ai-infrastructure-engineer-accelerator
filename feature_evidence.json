@@ -2,8 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-create-a-new-privacypolicypage-component-at-frontend-src-pages-privacypolicypage-tsx-containing-the-full-privacy-policy-content-with-all-branding-references-using-stack-teacher-and-stackteacher-com-no-careerist-or-careerist-com-references-anywhere-all-email-references-must-use-support-stackteacher-com-and-compliance-stackteacher-com-the-physical-address-must-be-30-n-gould-st-ste-n-sheridan-wy-82801-usa-the-phone-number-must-be-1234567890-the-page-layout-and-typography-should-match-the-existing-termsofusepage-tsx-style",
-      "featureTitle": "Create a new PrivacyPolicyPage component at frontend/src/pages/PrivacyPolicyPage.tsx containing the full Privacy Policy content with all branding references using 'Stack Teacher' and 'stackteacher.com' (no 'Careerist' or 'careerist.com' references anywhere). All email references must use support@stackteacher.com and compliance@stackteacher.com. The physical address must be '30 N Gould St Ste N, Sheridan, WY 82801, USA'. The phone number must be '1234567890'. The page layout and typography should match the existing TermsOfUsePage.tsx style.",
+      "featureId": "feature-replace-all-occurrences-of-compliance-stackteacher-com-with-support-stackteacher-com-across-all-frontend-source-files",
+      "featureTitle": "Replace all occurrences of 'compliance@stackteacher.com' with 'support@stackteacher.com' across all frontend source files.",
       "files": [
         "frontend/src/pages/PrivacyPolicyPage.tsx"
       ],
@@ -16,60 +16,6 @@
       ],
       "testIds": [
         "REQ-1"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-within-the-privacypolicypage-replace-any-plain-text-or-prose-cookie-descriptions-with-a-styled-html-table-that-lists-cookie-categories-cookie-names-purpose-and-duration-expiry-the-table-must-use-tailwind-css-classes-consistent-with-the-site-s-design-system-e-g-bordered-cells-alternating-row-shading-responsive-overflow-x-auto-wrapper",
-      "featureTitle": "Within the PrivacyPolicyPage, replace any plain-text or prose cookie descriptions with a styled HTML table that lists cookie categories, cookie names, purpose, and duration/expiry. The table must use Tailwind CSS classes consistent with the site's design system (e.g., bordered cells, alternating row shading, responsive overflow-x-auto wrapper).",
-      "files": [
-        "frontend/src/pages/PrivacyPolicyPage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-2"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-register-a-new-privacy-policy-route-in-frontend-src-app-tsx-that-renders-the-privacypolicypage-component-following-the-same-routing-pattern-used-for-the-existing-terms-route",
-      "featureTitle": "Register a new /privacy-policy route in frontend/src/App.tsx that renders the PrivacyPolicyPage component, following the same routing pattern used for the existing /terms route.",
-      "files": [
-        "frontend/src/App.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-3"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-a-privacy-policy-link-in-the-footer-section-of-frontend-src-components-layout-tsx-that-navigates-to-privacy-policy-placed-alongside-or-near-the-existing-terms-of-use-link",
-      "featureTitle": "Add a 'Privacy Policy' link in the footer section of frontend/src/components/Layout.tsx that navigates to /privacy-policy, placed alongside or near the existing 'Terms of Use' link.",
-      "files": [
-        "frontend/src/components/Layout.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-4"
       ],
       "confidence": "high"
     }

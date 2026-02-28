@@ -1,73 +1,30 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add Privacy Policy page with Stack Teacher branding and styled cookies table",
+  "title": "Replace compliance email with support email",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Create a new PrivacyPolicyPage component containing the full Privacy Policy content with Stack Teacher branding, contact details, and styling matching TermsOfUsePage",
+      "summary": "Replace all occurrences of 'compliance@stackteacher.com' with 'support@stackteacher.com' across all frontend source files",
       "acceptanceCriteria": [
-        "No occurrences of 'Careerist', 'careerist.com', or 'support@careerist.com' appear anywhere on the page",
-        "All email addresses show as support@stackteacher.com or compliance@stackteacher.com",
-        "Address displays as '30 N Gould St Ste N, Sheridan, WY 82801, USA'",
-        "Phone number displays as '1234567890'",
-        "Brand name 'Stack Teacher' is used consistently throughout",
-        "Page renders without errors and matches the visual style of TermsOfUsePage"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/PrivacyPolicyPage.tsx",
-          "operation": "create",
-          "description": "Create a new Privacy Policy page component that mirrors the layout and typography of TermsOfUsePage.tsx. Include all standard privacy policy sections (Information Collection, Use of Information, Cookies, Data Security, Third-Party Services, User Rights, Children's Privacy, Changes to Policy, Contact Information) with Stack Teacher branding throughout. Use 'Stack Teacher' as the company name, 'stackteacher.com' as the domain, 'support@stackteacher.com' and 'compliance@stackteacher.com' for email contacts, '30 N Gould St Ste N, Sheridan, WY 82801, USA' as the physical address, and '1234567890' as the phone number. Apply the same heading hierarchy, spacing, and Tailwind CSS classes used in TermsOfUsePage for visual consistency."
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Replace plain-text cookie descriptions with a styled HTML table listing cookie categories, names, purposes, and durations using Tailwind CSS",
-      "acceptanceCriteria": [
-        "A visually styled cookies table is present in the Cookies section of the Privacy Policy page",
-        "Table includes columns for at minimum: Cookie Name/Type, Purpose, and Duration",
-        "Table uses Tailwind CSS classes for borders, padding, and alternating row colors",
-        "Table is wrapped in an overflow-x-auto container for mobile responsiveness"
+        "No instance of 'compliance@stackteacher.com' remains anywhere in the frontend source files.",
+        "All locations that previously showed 'compliance@stackteacher.com' now display 'support@stackteacher.com'."
       ],
       "file_operations": [
         {
           "path": "frontend/src/pages/PrivacyPolicyPage.tsx",
           "operation": "modify",
-          "description": "Within the Cookies section of PrivacyPolicyPage, add a styled HTML table with columns for Cookie Name/Type, Purpose, and Duration/Expiry. Include representative cookie categories (Essential, Analytics, Functional, Marketing) with example cookies for each. Wrap the table in a div with 'overflow-x-auto' class for mobile responsiveness. Apply Tailwind classes to the table for borders ('border', 'border-border'), cell padding ('px-4 py-2'), header styling ('bg-muted font-semibold'), and alternating row colors ('even:bg-muted/50'). Ensure the table is visually consistent with the site's design system."
-        }
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "summary": "Register a new /privacy-policy route in App.tsx that renders the PrivacyPolicyPage component",
-      "acceptanceCriteria": [
-        "Navigating to /privacy-policy renders the PrivacyPolicyPage",
-        "The route is defined inside the shared Layout root route, consistent with all other routes",
-        "No existing routes are broken"
-      ],
-      "file_operations": [
+          "description": "Replace 'compliance@stackteacher.com' with 'support@stackteacher.com' in the Privacy Policy page content where users are instructed to contact for privacy-related inquiries or rights requests."
+        },
         {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/src/pages/TermsOfUsePage.tsx",
           "operation": "modify",
-          "description": "Add a new route definition for '/privacy-policy' within the Layout root route configuration, following the same pattern as the existing '/terms' route. Import PrivacyPolicyPage from '../pages/PrivacyPolicyPage' and register it as the component for the new route. Ensure the route is added alongside other informational routes (terms, about) and does not break existing routing."
-        }
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "summary": "Add a 'Privacy Policy' link in the footer of Layout.tsx that navigates to /privacy-policy",
-      "acceptanceCriteria": [
-        "A 'Privacy Policy' link is visible in the footer",
-        "Clicking the link navigates to /privacy-policy",
-        "The link styling is consistent with the existing 'Terms of Use' footer link"
-      ],
-      "file_operations": [
+          "description": "Replace 'compliance@stackteacher.com' with 'support@stackteacher.com' in the Terms of Use page content where users are directed to contact for legal or policy questions."
+        },
         {
           "path": "frontend/src/components/Layout.tsx",
           "operation": "modify",
-          "description": "In the footer section of Layout.tsx, add a 'Privacy Policy' link that navigates to '/privacy-policy'. Place the link near the existing 'Terms of Use' link, using the same Link component and styling (text size, color, hover effects). Ensure the link is properly spaced and visually consistent with other footer links."
+          "description": "Replace 'compliance@stackteacher.com' with 'support@stackteacher.com' in the footer section where contact information is displayed."
         }
       ]
     }

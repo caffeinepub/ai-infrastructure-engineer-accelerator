@@ -1,57 +1,26 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-28T01:59:06.978Z",
+  "generatedAt": "2026-02-28T02:10:32.335Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 4,
-    "implemented": 4,
+    "total": 1,
+    "implemented": 1,
     "items": [
       {
         "id": "REQ-1",
-        "summary": "Create a new PrivacyPolicyPage component at frontend/src/pages/PrivacyPolicyPage.tsx containing the full Privacy Policy content with all branding references using 'Stack Teacher' and 'stackteacher.com' (no 'Careerist' or 'careerist.com' references anywhere). All email references must use support@stackteacher.com and compliance@stackteacher.com. The physical address must be '30 N Gould St Ste N, Sheridan, WY 82801, USA'. The phone number must be '1234567890'. The page layout and typography should match the existing TermsOfUsePage.tsx style.",
+        "summary": "Replace all occurrences of 'compliance@stackteacher.com' with 'support@stackteacher.com' across all frontend source files.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/pages/PrivacyPolicyPage.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/pages/PrivacyPolicyPage.tsx"
-        ]
-      },
-      {
-        "id": "REQ-2",
-        "summary": "Within the PrivacyPolicyPage, replace any plain-text or prose cookie descriptions with a styled HTML table that lists cookie categories, cookie names, purpose, and duration/expiry. The table must use Tailwind CSS classes consistent with the site's design system (e.g., bordered cells, alternating row shading, responsive overflow-x-auto wrapper).",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/pages/PrivacyPolicyPage.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/pages/PrivacyPolicyPage.tsx"
-        ]
-      },
-      {
-        "id": "REQ-3",
-        "summary": "Register a new /privacy-policy route in frontend/src/App.tsx that renders the PrivacyPolicyPage component, following the same routing pattern used for the existing /terms route.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-4",
-        "summary": "Add a 'Privacy Policy' link in the footer section of frontend/src/components/Layout.tsx that navigates to /privacy-policy, placed alongside or near the existing 'Terms of Use' link.",
-        "status": "implemented",
-        "plannedFiles": [
+          "frontend/src/pages/PrivacyPolicyPage.tsx",
+          "frontend/src/pages/TermsOfUsePage.tsx",
           "frontend/src/components/Layout.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/components/Layout.tsx"
+          "frontend/src/pages/PrivacyPolicyPage.tsx"
         ]
       }
     ]
@@ -61,8 +30,6 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/App.tsx",
-    "frontend/src/components/Layout.tsx",
     "frontend/src/pages/PrivacyPolicyPage.tsx",
     "project_state.json",
     "scratch/component-selection.json",
