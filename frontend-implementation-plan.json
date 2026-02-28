@@ -1,30 +1,54 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Replace compliance email with support email",
+  "title": "Add Refund & Cancellation Policy to Footer",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Replace all occurrences of 'compliance@stackteacher.com' with 'support@stackteacher.com' across all frontend source files",
+      "summary": "Add a 'Refund Policy' link in the footer navigation alongside existing footer links that navigates to /refund-policy",
       "acceptanceCriteria": [
-        "No instance of 'compliance@stackteacher.com' remains anywhere in the frontend source files.",
-        "All locations that previously showed 'compliance@stackteacher.com' now display 'support@stackteacher.com'."
+        "A 'Refund Policy' link is visible in the footer",
+        "Clicking the link navigates to /refund-policy"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/PrivacyPolicyPage.tsx",
-          "operation": "modify",
-          "description": "Replace 'compliance@stackteacher.com' with 'support@stackteacher.com' in the Privacy Policy page content where users are instructed to contact for privacy-related inquiries or rights requests."
-        },
-        {
-          "path": "frontend/src/pages/TermsOfUsePage.tsx",
-          "operation": "modify",
-          "description": "Replace 'compliance@stackteacher.com' with 'support@stackteacher.com' in the Terms of Use page content where users are directed to contact for legal or policy questions."
-        },
-        {
           "path": "frontend/src/components/Layout.tsx",
           "operation": "modify",
-          "description": "Replace 'compliance@stackteacher.com' with 'support@stackteacher.com' in the footer section where contact information is displayed."
+          "description": "Add a 'Refund Policy' link in the footer navigation section alongside the existing Terms and Privacy Policy links. The link should use React Router's Link component and navigate to '/refund-policy'. Ensure the styling is consistent with existing footer links (Terms, Privacy Policy) by following the same CSS classes and structure."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Create a new RefundPolicyPage component at /refund-policy containing the full Refund & Cancellation Policy text with Stack Teacher branding substitutions applied",
+      "acceptanceCriteria": [
+        "Page renders at /refund-policy",
+        "All occurrences of 'Careerist' are replaced with 'Stack Teacher'",
+        "All occurrences of 'compliance@careerist.com' are replaced with 'support@stackteacher.com'",
+        "Address '30 N Gould St Ste N, Sheridan, WY 82801, USA' appears where address is referenced",
+        "All policy sections (opening disclaimer, refund conditions, Exceptional Refund Requests, Governing Law, Dispute Resolution) are present",
+        "Contact email at the bottom of the page reads support@stackteacher.com"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/RefundPolicyPage.tsx",
+          "operation": "create",
+          "description": "Create a new RefundPolicyPage component that renders the complete Refund & Cancellation Policy text provided by the user. Apply the following substitutions throughout the policy content: replace all instances of 'Careerist' with 'Stack Teacher', replace 'compliance@careerist.com' with 'support@stackteacher.com', and replace any address references with '30 N Gould St Ste N, Sheridan, WY 82801, USA'. The page must include all required sections in order: opening disclaimer about program cancellations, per-section refund conditions with specific criteria for each program section (Tech Foundations, Cloud Engineering, Kubernetes, AI Infrastructure), Exceptional Refund Requests section, Legal Framework section (including Governing Law and Dispute Resolution subsections), and closing contact information pointing to support@stackteacher.com. Follow the same layout structure and styling patterns used in TermsOfUsePage.tsx and PrivacyPolicyPage.tsx for consistency, including a sticky header with a back-to-home link and appropriate spacing/typography for readability."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Register the /refund-policy route in App.tsx pointing to RefundPolicyPage component",
+      "acceptanceCriteria": [
+        "Navigating directly to /refund-policy loads the RefundPolicyPage without errors",
+        "Route is registered consistently with existing route definitions in App.tsx"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Register a new route for '/refund-policy' in the TanStack Router configuration that points to the RefundPolicyPage component. Follow the same pattern used for the existing '/terms' and '/privacy-policy' routes, ensuring the route is wrapped in the shared Layout component. Add the necessary import statement for RefundPolicyPage at the top of the file alongside the other page imports."
         }
       ]
     }

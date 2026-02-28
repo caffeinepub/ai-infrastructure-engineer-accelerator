@@ -1,32 +1,78 @@
 {
   "kind": "build_request",
-  "title": "Replace compliance email with support email",
+  "title": "Add Refund & Cancellation Policy to Footer",
+  "projectName": "Stack Teacher",
   "priority": "normal",
   "requirements": [
     {
       "id": "REQ-1",
-      "text": "Replace all occurrences of 'compliance@stackteacher.com' with 'support@stackteacher.com' across all frontend source files.",
+      "text": "Add a 'Refund Policy' link in the footer navigation alongside existing footer links (Terms, Privacy Policy, etc.) that navigates to a new /refund-policy route.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-4"
+          "msg-1"
         ],
         "quotes": [
-          "replace compliance@stackteacher.com with support@stackteacher.com"
+          "again in the footer add a refund Policy section"
         ]
       },
       "acceptanceCriteria": [
-        "No instance of 'compliance@stackteacher.com' remains anywhere in the frontend source files.",
-        "All locations that previously showed 'compliance@stackteacher.com' now display 'support@stackteacher.com'."
+        "A 'Refund Policy' link is visible in the footer",
+        "Clicking the link navigates to /refund-policy"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create a new RefundPolicyPage at /refund-policy containing the full Refund & Cancellation Policy text provided by the user, with the following substitutions applied throughout: 'Careerist' replaced with 'Stack Teacher', 'compliance@careerist.com' replaced with 'support@stackteacher.com', and any address references replaced with '30 N Gould St Ste N, Sheridan, WY 82801, USA'. The page must include all sections: the opening disclaimer, per-section refund conditions, Exceptional Refund Requests, Legal Framework (Governing Law, Dispute Resolution), and the closing contact line pointing to support@stackteacher.com.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Refund & Cancellation Policy",
+          "replace compliance@careerist.com with support@stackteacher.com",
+          "Careerist branding with Stack teacher",
+          "all address reference to 30 N Gould St Ste N\nSheridan, WY 82801, USA"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Page renders at /refund-policy",
+        "All occurrences of 'Careerist' are replaced with 'Stack Teacher'",
+        "All occurrences of 'compliance@careerist.com' are replaced with 'support@stackteacher.com'",
+        "Address '30 N Gould St Ste N, Sheridan, WY 82801, USA' appears where address is referenced",
+        "All policy sections (opening disclaimer, refund conditions, Exceptional Refund Requests, Governing Law, Dispute Resolution) are present",
+        "Contact email at the bottom of the page reads support@stackteacher.com"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Register the /refund-policy route in App.tsx (TanStack Router) pointing to the new RefundPolicyPage component, following the same pattern used for /terms and /privacy-policy routes.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "again in the footer add a refund Policy section"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigating directly to /refund-policy loads the RefundPolicyPage without errors",
+        "Route is registered consistently with existing route definitions in App.tsx"
       ]
     }
   ],
   "constraints": [
-    "Do not change any other email addresses or contact information."
+    "Do not alter any existing footer links or layout — only add the new Refund Policy link",
+    "Do not modify files listed in frontend.immutablePaths",
+    "All instances of 'Careerist' must be replaced with 'Stack Teacher' (no occurrences of 'Careerist' should remain)",
+    "All instances of 'compliance@careerist.com' must be replaced with 'support@stackteacher.com'"
   ],
   "nonGoals": [
-    "Modifying any backend logic or data models.",
-    "Changing any other branding or content beyond the specified email address."
+    "Modifying backend logic or data models",
+    "Changing any other existing pages or policy pages",
+    "Adding any new branding images or assets"
   ],
   "imageRequirements": {
     "required": [],

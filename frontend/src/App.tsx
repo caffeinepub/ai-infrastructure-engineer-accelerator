@@ -9,6 +9,7 @@ import ApplicationSuccess from './pages/ApplicationSuccess';
 import AboutPage from './pages/AboutPage';
 import TermsOfUsePage from './pages/TermsOfUsePage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import RefundPolicyPage from './pages/RefundPolicyPage';
 
 const rootRoute = createRootRoute({
   component: Layout,
@@ -68,6 +69,12 @@ const privacyPolicyRoute = createRoute({
   component: PrivacyPolicyPage,
 });
 
+const refundPolicyRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/refund-policy',
+  component: RefundPolicyPage,
+});
+
 const routeTree = rootRoute.addChildren([
   indexRoute,
   infrastructureRoute,
@@ -78,6 +85,7 @@ const routeTree = rootRoute.addChildren([
   aboutRoute,
   termsRoute,
   privacyPolicyRoute,
+  refundPolicyRoute,
 ]);
 
 const router = createRouter({ routeTree });

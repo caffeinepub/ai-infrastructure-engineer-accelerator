@@ -1,26 +1,46 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-28T02:10:32.335Z",
+  "generatedAt": "2026-02-28T02:22:24.155Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 1,
-    "implemented": 1,
+    "total": 3,
+    "implemented": 3,
     "items": [
       {
         "id": "REQ-1",
-        "summary": "Replace all occurrences of 'compliance@stackteacher.com' with 'support@stackteacher.com' across all frontend source files.",
+        "summary": "Add a 'Refund Policy' link in the footer navigation alongside existing footer links (Terms, Privacy Policy, etc.) that navigates to a new /refund-policy route.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/pages/PrivacyPolicyPage.tsx",
-          "frontend/src/pages/TermsOfUsePage.tsx",
           "frontend/src/components/Layout.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/pages/PrivacyPolicyPage.tsx"
+          "frontend/src/components/Layout.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Create a new RefundPolicyPage at /refund-policy containing the full Refund & Cancellation Policy text provided by the user, with the following substitutions applied throughout: 'Careerist' replaced with 'Stack Teacher', 'compliance@careerist.com' replaced with 'support@stackteacher.com', and any address references replaced with '30 N Gould St Ste N, Sheridan, WY 82801, USA'. The page must include all sections: the opening disclaimer, per-section refund conditions, Exceptional Refund Requests, Legal Framework (Governing Law, Dispute Resolution), and the closing contact line pointing to support@stackteacher.com.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/RefundPolicyPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/RefundPolicyPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Register the /refund-policy route in App.tsx (TanStack Router) pointing to the new RefundPolicyPage component, following the same pattern used for /terms and /privacy-policy routes.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx"
         ]
       }
     ]
@@ -30,7 +50,9 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/pages/PrivacyPolicyPage.tsx",
+    "frontend/src/App.tsx",
+    "frontend/src/components/Layout.tsx",
+    "frontend/src/pages/RefundPolicyPage.tsx",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

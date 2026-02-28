@@ -46,12 +46,12 @@ export default function Layout() {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link to="/data-analytics" className="cursor-pointer">
-                    AI Data & Analytics Engineer
+                    AI Data &amp; Analytics Engineer
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link to="/qa-testing" className="cursor-pointer">
-                    QA & Software Testing
+                    QA &amp; Software Testing
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -96,6 +96,8 @@ export default function Layout() {
             <Link to="/terms" className="hover:text-foreground transition-colors">Terms of Use</Link>
             <span>•</span>
             <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+            <span>•</span>
+            <Link to="/refund-policy" className="hover:text-foreground transition-colors">Refund Policy</Link>
             <span>•</span>
             <Link to="/" className="hover:text-foreground transition-colors">Programs</Link>
             <span>•</span>
