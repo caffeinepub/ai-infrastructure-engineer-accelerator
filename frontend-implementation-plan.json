@@ -1,56 +1,73 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add Terms of Use footer section and full Terms of Service page",
+  "title": "Add Privacy Policy page with Stack Teacher branding and styled cookies table",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Create a new /terms route in the TanStack Router configuration that renders a dedicated TermsOfUsePage component",
+      "summary": "Create a new PrivacyPolicyPage component containing the full Privacy Policy content with Stack Teacher branding, contact details, and styling matching TermsOfUsePage",
       "acceptanceCriteria": [
-        "Navigating to /terms renders the Terms of Use page without a 404 or blank screen",
-        "The route is registered under the shared Layout root route so the header and footer are visible"
+        "No occurrences of 'Careerist', 'careerist.com', or 'support@careerist.com' appear anywhere on the page",
+        "All email addresses show as support@stackteacher.com or compliance@stackteacher.com",
+        "Address displays as '30 N Gould St Ste N, Sheridan, WY 82801, USA'",
+        "Phone number displays as '1234567890'",
+        "Brand name 'Stack Teacher' is used consistently throughout",
+        "Page renders without errors and matches the visual style of TermsOfUsePage"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Add a new /terms route to the TanStack Router configuration under the shared Layout root route, following the same pattern as the existing /about route. Import and wire the TermsOfUsePage component."
+          "path": "frontend/src/pages/PrivacyPolicyPage.tsx",
+          "operation": "create",
+          "description": "Create a new Privacy Policy page component that mirrors the layout and typography of TermsOfUsePage.tsx. Include all standard privacy policy sections (Information Collection, Use of Information, Cookies, Data Security, Third-Party Services, User Rights, Children's Privacy, Changes to Policy, Contact Information) with Stack Teacher branding throughout. Use 'Stack Teacher' as the company name, 'stackteacher.com' as the domain, 'support@stackteacher.com' and 'compliance@stackteacher.com' for email contacts, '30 N Gould St Ste N, Sheridan, WY 82801, USA' as the physical address, and '1234567890' as the phone number. Apply the same heading hierarchy, spacing, and Tailwind CSS classes used in TermsOfUsePage for visual consistency."
         }
       ]
     },
     {
       "id": "REQ-2",
-      "summary": "Create a TermsOfUsePage component that renders all 14 sections of the Terms of Service exactly as provided, preserving all content verbatim",
+      "summary": "Replace plain-text cookie descriptions with a styled HTML table listing cookie categories, names, purposes, and durations using Tailwind CSS",
       "acceptanceCriteria": [
-        "All 14 section headings are present and numbered correctly",
-        "The opening bold warning paragraph about age requirements is displayed",
-        "All bullet lists and sub-sections within each section are rendered completely",
-        "ALL-CAPS disclaimer blocks (Sections 4 and 5) are displayed in uppercase",
-        "support@stackteacher.com appears as a clickable mailto link",
-        "No Stack Teacher branding is missing or replaced with other company names",
-        "The copyright line 'Copyright © Stack Teacher. All rights reserved.' is present in Section 13"
+        "A visually styled cookies table is present in the Cookies section of the Privacy Policy page",
+        "Table includes columns for at minimum: Cookie Name/Type, Purpose, and Duration",
+        "Table uses Tailwind CSS classes for borders, padding, and alternating row colors",
+        "Table is wrapped in an overflow-x-auto container for mobile responsiveness"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/TermsOfUsePage.tsx",
-          "operation": "create",
-          "description": "Create the TermsOfUsePage component containing all 14 sections of the Terms of Service. Include the opening bold warning paragraph about age requirements. Preserve all section headings (numbered 1-14), body text, bullet lists, sub-sections (Feedback, Mandatory Binding Arbitration, Class Action Waiver, Jury Trial Waiver, Small Claims, Emergency Relief, Venue), and ALL-CAPS disclaimer blocks verbatim. Render support@stackteacher.com as a mailto link. Ensure all Stack Teacher branding is preserved and include the copyright line in Section 13. Use semantic HTML with appropriate heading levels and list markup for accessibility."
+          "path": "frontend/src/pages/PrivacyPolicyPage.tsx",
+          "operation": "modify",
+          "description": "Within the Cookies section of PrivacyPolicyPage, add a styled HTML table with columns for Cookie Name/Type, Purpose, and Duration/Expiry. Include representative cookie categories (Essential, Analytics, Functional, Marketing) with example cookies for each. Wrap the table in a div with 'overflow-x-auto' class for mobile responsiveness. Apply Tailwind classes to the table for borders ('border', 'border-border'), cell padding ('px-4 py-2'), header styling ('bg-muted font-semibold'), and alternating row colors ('even:bg-muted/50'). Ensure the table is visually consistent with the site's design system."
         }
       ]
     },
     {
       "id": "REQ-3",
-      "summary": "Add a Terms of Use link in the site footer next to the existing About Us link",
+      "summary": "Register a new /privacy-policy route in App.tsx that renders the PrivacyPolicyPage component",
       "acceptanceCriteria": [
-        "A 'Terms of Use' link appears in the footer immediately adjacent to the 'About Us' link",
-        "Clicking the 'Terms of Use' link navigates to /terms",
-        "The link styling is consistent with the existing 'About Us' footer link"
+        "Navigating to /privacy-policy renders the PrivacyPolicyPage",
+        "The route is defined inside the shared Layout root route, consistent with all other routes",
+        "No existing routes are broken"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add a new route definition for '/privacy-policy' within the Layout root route configuration, following the same pattern as the existing '/terms' route. Import PrivacyPolicyPage from '../pages/PrivacyPolicyPage' and register it as the component for the new route. Ensure the route is added alongside other informational routes (terms, about) and does not break existing routing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Add a 'Privacy Policy' link in the footer of Layout.tsx that navigates to /privacy-policy",
+      "acceptanceCriteria": [
+        "A 'Privacy Policy' link is visible in the footer",
+        "Clicking the link navigates to /privacy-policy",
+        "The link styling is consistent with the existing 'Terms of Use' footer link"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/Layout.tsx",
           "operation": "modify",
-          "description": "In the footer section containing the About Us link, add a Terms of Use link immediately adjacent to it. The link must navigate to /terms and use consistent styling with the existing About Us link."
+          "description": "In the footer section of Layout.tsx, add a 'Privacy Policy' link that navigates to '/privacy-policy'. Place the link near the existing 'Terms of Use' link, using the same Link component and styling (text size, color, hover effects). Ensure the link is properly spaced and visually consistent with other footer links."
         }
       ]
     }

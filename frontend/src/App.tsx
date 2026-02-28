@@ -8,6 +8,7 @@ import ApplicationForm from './pages/ApplicationForm';
 import ApplicationSuccess from './pages/ApplicationSuccess';
 import AboutPage from './pages/AboutPage';
 import TermsOfUsePage from './pages/TermsOfUsePage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
 const rootRoute = createRootRoute({
   component: Layout,
@@ -61,6 +62,12 @@ const termsRoute = createRoute({
   component: TermsOfUsePage,
 });
 
+const privacyPolicyRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/privacy-policy',
+  component: PrivacyPolicyPage,
+});
+
 const routeTree = rootRoute.addChildren([
   indexRoute,
   infrastructureRoute,
@@ -70,6 +77,7 @@ const routeTree = rootRoute.addChildren([
   successRoute,
   aboutRoute,
   termsRoute,
+  privacyPolicyRoute,
 ]);
 
 const router = createRouter({ routeTree });

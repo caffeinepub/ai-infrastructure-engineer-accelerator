@@ -95,6 +95,8 @@ export default function Layout() {
             <span>•</span>
             <Link to="/terms" className="hover:text-foreground transition-colors">Terms of Use</Link>
             <span>•</span>
+            <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+            <span>•</span>
             <Link to="/" className="hover:text-foreground transition-colors">Programs</Link>
             <span>•</span>
             <Link to="/" className="hover:text-foreground transition-colors">Syllabus</Link>
@@ -104,8 +106,6 @@ export default function Layout() {
             <Link to="/" className="hover:text-foreground transition-colors">Careers</Link>
             <span>•</span>
             <Link to="/" className="hover:text-foreground transition-colors">Contact</Link>
-            <span>•</span>
-            <Link to="/" className="hover:text-foreground transition-colors">Privacy</Link>
           </div>
 
           <div className="flex flex-col items-center justify-center gap-4 text-center">

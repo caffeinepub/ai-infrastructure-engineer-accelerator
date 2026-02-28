@@ -1,11 +1,12 @@
 # Specification
 
 ## Summary
-**Goal:** Add a "Terms of Use" link in the footer and a dedicated Terms of Service page at `/terms`.
+**Goal:** Add a Privacy Policy page with Stack Teacher branding, a styled cookies table, a dedicated route, and a footer link.
 
 **Planned changes:**
-- Add a new `/terms` route in the router configuration that renders a `TermsOfUsePage` component, using the shared Layout (header/footer visible)
-- Create a `TermsOfUsePage` component containing all 14 sections of the Terms of Service verbatim, including the opening bold warning paragraph, bullet lists, sub-sections, ALL-CAPS disclaimer blocks, a clickable `mailto:support@stackteacher.com` link, and the copyright line "Copyright © Stack Teacher. All rights reserved."
-- Add a "Terms of Use" footer link next to the existing "About Us" link, navigating to `/terms`, with matching styling
+- Create a new `PrivacyPolicyPage.tsx` component with full privacy policy content using "Stack Teacher" and "stackteacher.com" branding (support@stackteacher.com, compliance@stackteacher.com, address: 30 N Gould St Ste N, Sheridan, WY 82801, USA, phone: 1234567890), styled to match the existing `TermsOfUsePage`
+- Include a styled Tailwind CSS table in the Cookies section with columns for Cookie Name/Type, Purpose, and Duration, wrapped in an `overflow-x-auto` container
+- Register a `/privacy-policy` route in `App.tsx` rendering the new page, consistent with existing routing patterns
+- Add a "Privacy Policy" footer link in `Layout.tsx` alongside the existing "Terms of Use" link
 
-**User-visible outcome:** Users can click "Terms of Use" in the footer to navigate to a full Terms of Service page displaying all legal content for Stack Teacher.
+**User-visible outcome:** Users can navigate to `/privacy-policy` or click the footer "Privacy Policy" link to view a fully branded Stack Teacher privacy policy page with a styled cookies table.

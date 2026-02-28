@@ -1,32 +1,42 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "A Stack Teacher website project. The footer has an 'About Us' link and is being updated to include a 'Terms of Use' section linking to a full Terms of Service page (14 sections, Stack Teacher branding, support@stackteacher.com).",
-  "architectural_notes": [],
+  "summary": "Building a Privacy Policy page for Stack Teacher (stackteacher.com) with updated branding, contact details, and styled cookies table.",
+  "architectural_notes": [
+    "Privacy Policy page lives in the site footer alongside Terms of Use"
+  ],
   "known_issues": [],
   "isFixRequest": false,
   "existing_features": [
     {
-      "id": "feature-create-a-new-terms-route-in-the-tanstack-router-configuration-app-tsx-that-renders-a-dedicated-termsofusepage-component-following-the-same-pattern-as-the-existing-about-route",
-      "title": "Create a new `/terms` route in the TanStack Router configuration (App.tsx) that renders a dedicated TermsOfUsePage component, following the same pattern as the existing `/about` route.",
+      "id": "feature-create-a-new-privacypolicypage-component-at-frontend-src-pages-privacypolicypage-tsx-containing-the-full-privacy-policy-content-with-all-branding-references-using-stack-teacher-and-stackteacher-com-no-careerist-or-careerist-com-references-anywhere-all-email-references-must-use-support-stackteacher-com-and-compliance-stackteacher-com-the-physical-address-must-be-30-n-gould-st-ste-n-sheridan-wy-82801-usa-the-phone-number-must-be-1234567890-the-page-layout-and-typography-should-match-the-existing-termsofusepage-tsx-style",
+      "title": "Create a new PrivacyPolicyPage component at frontend/src/pages/PrivacyPolicyPage.tsx containing the full Privacy Policy content with all branding references using 'Stack Teacher' and 'stackteacher.com' (no 'Careerist' or 'careerist.com' references anywhere). All email references must use support@stackteacher.com and compliance@stackteacher.com. The physical address must be '30 N Gould St Ste N, Sheridan, WY 82801, USA'. The phone number must be '1234567890'. The page layout and typography should match the existing TermsOfUsePage.tsx style.",
       "reqIds": [
         "REQ-1"
       ],
       "version": 1
     },
     {
-      "id": "feature-create-a-termsofusepage-component-that-renders-all-14-sections-of-the-terms-of-service-exactly-as-provided-all-section-headings-body-text-bullet-lists-sub-sections-e-g-feedback-mandatory-binding-arbitration-class-action-waiver-jury-trial-waiver-small-claims-emergency-relief-venue-and-the-all-caps-disclaimer-blocks-must-be-preserved-verbatim-the-support-email-must-display-as-support-stackteacher-com-mailto-link-and-all-references-must-read-stack-teacher-the-page-must-include-the-opening-bold-warning-paragraph",
-      "title": "Create a TermsOfUsePage component that renders all 14 sections of the Terms of Service exactly as provided. All section headings, body text, bullet lists, sub-sections (e.g. Feedback, Mandatory Binding Arbitration, Class Action Waiver, Jury Trial Waiver, Small Claims, Emergency Relief, Venue), and the ALL-CAPS disclaimer blocks must be preserved verbatim. The support email must display as support@stackteacher.com (mailto link) and all references must read 'Stack Teacher'. The page must include the opening bold warning paragraph.",
+      "id": "feature-within-the-privacypolicypage-replace-any-plain-text-or-prose-cookie-descriptions-with-a-styled-html-table-that-lists-cookie-categories-cookie-names-purpose-and-duration-expiry-the-table-must-use-tailwind-css-classes-consistent-with-the-site-s-design-system-e-g-bordered-cells-alternating-row-shading-responsive-overflow-x-auto-wrapper",
+      "title": "Within the PrivacyPolicyPage, replace any plain-text or prose cookie descriptions with a styled HTML table that lists cookie categories, cookie names, purpose, and duration/expiry. The table must use Tailwind CSS classes consistent with the site's design system (e.g., bordered cells, alternating row shading, responsive overflow-x-auto wrapper).",
       "reqIds": [
         "REQ-2"
       ],
       "version": 1
     },
     {
-      "id": "feature-in-the-site-footer-layout-tsx-add-a-terms-of-use-link-in-the-same-footer-section-that-contains-the-existing-about-us-link-placed-directly-next-to-it-the-link-must-navigate-to-the-terms-route",
-      "title": "In the site footer (Layout.tsx), add a 'Terms of Use' link in the same footer section that contains the existing 'About Us' link, placed directly next to it. The link must navigate to the /terms route.",
+      "id": "feature-register-a-new-privacy-policy-route-in-frontend-src-app-tsx-that-renders-the-privacypolicypage-component-following-the-same-routing-pattern-used-for-the-existing-terms-route",
+      "title": "Register a new /privacy-policy route in frontend/src/App.tsx that renders the PrivacyPolicyPage component, following the same routing pattern used for the existing /terms route.",
       "reqIds": [
         "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-privacy-policy-link-in-the-footer-section-of-frontend-src-components-layout-tsx-that-navigates-to-privacy-policy-placed-alongside-or-near-the-existing-terms-of-use-link",
+      "title": "Add a 'Privacy Policy' link in the footer section of frontend/src/components/Layout.tsx that navigates to /privacy-policy, placed alongside or near the existing 'Terms of Use' link.",
+      "reqIds": [
+        "REQ-4"
       ],
       "version": 1
     }
@@ -34,7 +44,7 @@
   "new_feature_requests": [
     {
       "id": "AR-1",
-      "summary": "Add 'Terms of Use' section in footer next to 'About Us' with full 14-section Terms of Service page (Stack Teacher branding, support@stackteacher.com)",
+      "summary": "Privacy Policy page with Stack Teacher branding, updated contact info (support@stackteacher.com, 30 N Gould St Ste N Sheridan WY, phone 1234567890), and styled cookies table",
       "reqIds": [],
       "status": "pending"
     }
