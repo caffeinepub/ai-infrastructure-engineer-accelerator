@@ -1,39 +1,25 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-25T16:36:22.612Z",
-  "summary": "The diff implements all 16 requirements (REQ-48 through REQ-63) comprehensively. New QA landing page components, backend Motoko type updates, navigation changes, routing, and application form updates are all present. One minor content discrepancy exists in REQ-50 (seven vs. the listed six named profiles), but the implementation includes seven cards. All core requirements appear satisfied.",
-  "missing_requirements": [],
-  "hallucinated_features": [
+  "generatedAt": "2026-02-28T01:29:31.058Z",
+  "summary": "The diff implements all three required features: a /terms route in App.tsx (REQ-1), a TermsOfUsePage component (REQ-2), and a Terms of Use footer link in Layout.tsx (REQ-3). However, the TermsOfUsePage.tsx file is truncated, making it impossible to fully verify that all 14 sections, ALL-CAPS disclaimer blocks, the support@stackteacher.com mailto link, the copyright line in Section 13, and all sub-sections are present and verbatim.",
+  "missing_requirements": [
     {
-      "description": "backend/migration.mo file added with a full migration module to convert old application data to new schema",
-      "reason": "The build request does not mention creating a migration module. REQ-60 only requires adding the #qaTestingProgram variant to the backend type. A migration.mo file was not requested.",
+      "id": "REQ-2",
+      "requirement": "All 14 section headings present and numbered correctly; ALL-CAPS disclaimer blocks (Sections 4 and 5) displayed in uppercase; support@stackteacher.com as a clickable mailto link; copyright line in Section 13; all bullet lists and sub-sections rendered completely.",
+      "reason": "The TermsOfUsePage.tsx file is truncated in the diff, showing only the opening warning paragraph and the first 3 sections. It is impossible to confirm that all 14 sections, ALL-CAPS disclaimer blocks, the mailto link, the Section 13 copyright line, and sub-sections like Feedback, Mandatory Binding Arbitration, Class Action Waiver, Jury Trial Waiver, Small Claims, Emergency Relief, and Venue are present.",
       "evidence": [
-        "backend/migration.mo",
-        "backend/main.mo"
+        "frontend/src/pages/TermsOfUsePage.tsx"
       ]
     }
   ],
-  "confidence": 0.88,
+  "hallucinated_features": [],
+  "confidence": 0.62,
   "changed_files": [
-    "backend/main.mo",
-    "backend/migration.mo",
     "frontend-file-summaries.txt",
     "frontend/src/App.tsx",
-    "frontend/src/components/FeaturedProgramsSection.tsx",
     "frontend/src/components/Layout.tsx",
-    "frontend/src/components/QACareerServicesSection.tsx",
-    "frontend/src/components/QACurriculumSection.tsx",
-    "frontend/src/components/QAFAQSection.tsx",
-    "frontend/src/components/QAFinalCTASection.tsx",
-    "frontend/src/components/QAHeroSection.tsx",
-    "frontend/src/components/QAOpportunitySection.tsx",
-    "frontend/src/components/QAPricingSection.tsx",
-    "frontend/src/components/QAProgramStructureSection.tsx",
-    "frontend/src/components/QAProjectsSection.tsx",
-    "frontend/src/components/QATargetAudienceSection.tsx",
-    "frontend/src/pages/ApplicationForm.tsx",
-    "frontend/src/pages/QATestingLandingPage.tsx",
+    "frontend/src/pages/TermsOfUsePage.tsx",
     "project_state.json"
   ]
 }

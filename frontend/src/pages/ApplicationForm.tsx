@@ -89,7 +89,7 @@ export default function ApplicationForm() {
                       AI Data & Analytics Engineer Accelerator
                     </SelectItem>
                     <SelectItem value={Program.qaTestingProgram}>
-                      QA & Software Testing Career Launch Program
+                      AI-Augmented QA Automation Engineer Program
                     </SelectItem>
                   </SelectContent>
                 </Select>

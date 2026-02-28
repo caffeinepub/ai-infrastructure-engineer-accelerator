@@ -1,15 +1,38 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { FileText, Linkedin, MessageSquare, Video, Users, TrendingUp, Calendar } from 'lucide-react';
+import { FileText, Linkedin, MessageSquare, Code2, Users, Map } from 'lucide-react';
 
 export default function QACareerServicesSection() {
   const services = [
-    { icon: FileText, title: 'US-format resume writing' },
-    { icon: Linkedin, title: 'LinkedIn optimization' },
-    { icon: MessageSquare, title: 'QA interview question bank' },
-    { icon: Video, title: 'Mock interviews' },
-    { icon: Users, title: 'Behavioral interview training' },
-    { icon: TrendingUp, title: 'Job search strategy guidance' },
-    { icon: Calendar, title: '60-day post-program support' },
+    {
+      icon: FileText,
+      title: 'US-Format Resume Writing',
+      description: 'Positioned for QA Automation Engineer roles in the US market.',
+    },
+    {
+      icon: Linkedin,
+      title: 'LinkedIn Optimization',
+      description: 'Profile tuned to attract US-based recruiters and hiring managers.',
+    },
+    {
+      icon: MessageSquare,
+      title: 'QA Interview Question Bank',
+      description: 'Curated bank of real QA Automation interview questions with model answers.',
+    },
+    {
+      icon: Code2,
+      title: 'Automation Coding Mock Interviews',
+      description: 'Live mock interviews with automation coding challenges — not just behavioral prep.',
+    },
+    {
+      icon: Users,
+      title: 'Behavioral Interview Training',
+      description: 'STAR-method coaching for US-style behavioral and situational interviews.',
+    },
+    {
+      icon: Map,
+      title: '60-Day Job Strategy Plan',
+      description: 'A structured 60-day post-program action plan to maximize your job search momentum.',
+    },
   ];
 
   return (
@@ -21,27 +44,24 @@ export default function QACareerServicesSection() {
               Career Accelerator Layer
             </h2>
             <p className="text-xl text-muted-foreground">
-              This is critical for US market positioning.
+              We prepare AI-augmented engineers for interviews — not just tool operators.
             </p>
           </div>
 
-          <div className="space-y-8">
-            <p className="text-lg text-center font-medium">Included:</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service) => (
+              <Card key={service.title} className="border-primary/20">
+                <CardContent className="pt-6 text-center">
+                  <service.icon className="h-10 w-10 text-primary mx-auto mb-3" />
+                  <p className="font-semibold mb-2">{service.title}</p>
+                  <p className="text-sm text-muted-foreground">{service.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service) => (
-                <Card key={service.title} className="border-primary/20">
-                  <CardContent className="pt-6 text-center">
-                    <service.icon className="h-10 w-10 text-primary mx-auto mb-3" />
-                    <p className="font-medium">{service.title}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            <div className="text-center space-y-2">
-              <p className="text-2xl font-bold">We prepare you for interviews — not just tools.</p>
-            </div>
+          <div className="text-center mt-10">
+            <p className="text-2xl font-bold">We prepare you for interviews — not just tools.</p>
           </div>
         </div>
       </div>

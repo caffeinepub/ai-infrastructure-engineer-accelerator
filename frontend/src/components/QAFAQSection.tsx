@@ -9,19 +9,28 @@ export default function QAFAQSection() {
   const faqs = [
     {
       question: 'Is this beginner-friendly?',
-      answer: 'Yes. No prior coding required. We start from the very basics of software testing and build progressively through the 12 weeks.',
+      answer:
+        'Yes — we start from QA fundamentals. No prior coding required. Month 1 builds thinking before tools.',
     },
     {
       question: 'Is automation included?',
-      answer: 'Yes, at a foundational level in Month 3. We introduce basic Java or Python for QA, Selenium fundamentals, and automation test scripts — gradually and practically.',
+      answer:
+        'Yes — automation is a core focus from Month 2. You will build real frameworks, not just run scripts.',
     },
     {
-      question: 'Can I get hired after 3 months?',
-      answer: 'You will be prepared to apply for entry-level QA roles. Hiring depends on individual effort and market conditions. We provide the skills, portfolio, and career support — the rest is up to you.',
+      question: 'What role does AI play in this program?',
+      answer:
+        'AI is integrated throughout as a productivity multiplier. You will learn prompt engineering for QA, AI-assisted test generation, log summarization, and automated regression tools — while developing the human judgment AI cannot replace.',
     },
     {
-      question: 'Is this fully online?',
-      answer: 'Yes. Live cohort-based format with weekly live sessions, recorded access, and community support.',
+      question: 'Can I get hired after 12 weeks?',
+      answer:
+        'You will be prepared to apply for QA Automation Engineer roles. Hiring depends on individual effort and market conditions.',
+    },
+    {
+      question: 'How is this different from a Selenium bootcamp?',
+      answer:
+        'We teach test strategy, framework architecture, CI/CD integration, AI-augmented workflows, and career readiness — not just scripting tools.',
     },
   ];
 
@@ -32,7 +41,7 @@ export default function QAFAQSection() {
           <div className="text-center mb-12">
             <h2 className="font-display text-4xl font-bold mb-4">Frequently Asked Questions</h2>
             <p className="text-xl text-muted-foreground">
-              Everything you need to know about the QA program
+              Everything you need to know about the AI-Augmented QA program
             </p>
           </div>
 

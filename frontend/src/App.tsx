@@ -6,6 +6,8 @@ import DataAnalyticsLandingPage from './pages/DataAnalyticsLandingPage';
 import QATestingLandingPage from './pages/QATestingLandingPage';
 import ApplicationForm from './pages/ApplicationForm';
 import ApplicationSuccess from './pages/ApplicationSuccess';
+import AboutPage from './pages/AboutPage';
+import TermsOfUsePage from './pages/TermsOfUsePage';
 
 const rootRoute = createRootRoute({
   component: Layout,
@@ -47,6 +49,18 @@ const successRoute = createRoute({
   component: ApplicationSuccess,
 });
 
+const aboutRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/about',
+  component: AboutPage,
+});
+
+const termsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/terms',
+  component: TermsOfUsePage,
+});
+
 const routeTree = rootRoute.addChildren([
   indexRoute,
   infrastructureRoute,
@@ -54,6 +68,8 @@ const routeTree = rootRoute.addChildren([
   qaTestingRoute,
   applyRoute,
   successRoute,
+  aboutRoute,
+  termsRoute,
 ]);
 
 const router = createRouter({ routeTree });

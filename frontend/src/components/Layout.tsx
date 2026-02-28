@@ -91,19 +91,21 @@ export default function Layout() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground mb-6">
-            <Link to="/" className="hover:text-foreground">About</Link>
+            <Link to="/about" className="hover:text-foreground transition-colors">About</Link>
             <span>•</span>
-            <Link to="/" className="hover:text-foreground">Programs</Link>
+            <Link to="/terms" className="hover:text-foreground transition-colors">Terms of Use</Link>
             <span>•</span>
-            <Link to="/" className="hover:text-foreground">Syllabus</Link>
+            <Link to="/" className="hover:text-foreground transition-colors">Programs</Link>
             <span>•</span>
-            <Link to="/" className="hover:text-foreground">FAQ</Link>
+            <Link to="/" className="hover:text-foreground transition-colors">Syllabus</Link>
             <span>•</span>
-            <Link to="/" className="hover:text-foreground">Careers</Link>
+            <Link to="/" className="hover:text-foreground transition-colors">FAQ</Link>
             <span>•</span>
-            <Link to="/" className="hover:text-foreground">Contact</Link>
+            <Link to="/" className="hover:text-foreground transition-colors">Careers</Link>
             <span>•</span>
-            <Link to="/" className="hover:text-foreground">Privacy</Link>
+            <Link to="/" className="hover:text-foreground transition-colors">Contact</Link>
+            <span>•</span>
+            <Link to="/" className="hover:text-foreground transition-colors">Privacy</Link>
           </div>
 
           <div className="flex flex-col items-center justify-center gap-4 text-center">

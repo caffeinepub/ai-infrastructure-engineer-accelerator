@@ -4,9 +4,9 @@ import Nat "mo:core/Nat";
 import Array "mo:core/Array";
 import Order "mo:core/Order";
 import Runtime "mo:core/Runtime";
-import Migration "migration";
 
-(with migration = Migration.run)
+
+
 actor {
   public type CareerStatus = {
     #student;

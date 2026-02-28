@@ -11,18 +11,21 @@ export default function FeaturedProgramsSection() {
       description: 'Cloud, Kubernetes, CI/CD, Terraform — scale and deploy AI systems.',
       badge: 'Advanced',
       link: '/infrastructure',
+      cohort: 'Next cohort intake — limited seats.',
     },
     {
       title: 'AI Data & Analytics Engineer Accelerator',
       description: 'SQL → pipelines → AI-assisted analytics → dashboards that influence decisions.',
       badge: 'Mid-Level',
       link: '/data-analytics',
+      cohort: 'Next cohort intake — limited seats.',
     },
     {
-      title: 'QA & Software Testing Career Launch Program',
-      description: 'Your first step into tech — manual testing, API testing, automation basics, and job readiness in 12 weeks.',
-      badge: 'Entry-Level Gateway',
+      title: 'AI-Augmented QA Automation Engineer Program',
+      description: 'Test strategy + automation frameworks + AI-powered workflows — build skills that AI cannot replace.',
+      badge: 'AI-Integrated | 12 Weeks',
       link: '/qa-testing',
+      cohort: 'Next cohort intake — limited seats.',
     },
   ];
 
@@ -47,7 +50,7 @@ export default function FeaturedProgramsSection() {
                 <CardDescription className="text-base mt-2">{program.description}</CardDescription>
               </CardHeader>
               <CardContent className="mt-auto">
-                <p className="text-xs text-muted-foreground mb-4">Next cohort intake — limited seats.</p>
+                <p className="text-xs text-muted-foreground mb-4">{program.cohort}</p>
                 <Link to={program.link}>
                   <Button variant="outline" className="w-full group">
                     View syllabus

@@ -1,4 +1,5 @@
 import QAHeroSection from '../components/QAHeroSection';
+import QAOutcomesSection from '../components/QAOutcomesSection';
 import QATargetAudienceSection from '../components/QATargetAudienceSection';
 import QAOpportunitySection from '../components/QAOpportunitySection';
 import QACurriculumSection from '../components/QACurriculumSection';
@@ -13,6 +14,7 @@ export default function QATestingLandingPage() {
   return (
     <div className="w-full">
       <QAHeroSection />
+      <QAOutcomesSection />
       <QATargetAudienceSection />
       <QAOpportunitySection />
       <QACurriculumSection />

@@ -7,15 +7,15 @@ export default function QAFinalCTASection() {
       <div className="container">
         <div className="mx-auto max-w-3xl text-center space-y-8">
           <h2 className="font-display text-4xl font-bold">
-            Your First Step Into Tech Starts Here
+            Don't Train to Compete with AI — Train to Use It.
           </h2>
           <p className="text-2xl font-medium">
-            QA is the accessible entry path — and this program is built for it.
+            AI-Augmented QA Automation Engineers are what the market needs next.
           </p>
 
           <div className="bg-muted/50 rounded-lg p-8 space-y-6">
             <p className="text-xl">
-              Apply for the next QA cohort. Seats are limited to maintain mentorship quality. Break into tech the accessible way — with structure, support, and real skills.
+              Apply for the next cohort of the AI-Augmented QA Automation Engineer Program. Seats are limited to maintain mentorship quality. Build the skills, frameworks, and AI workflows that make you indispensable.
             </p>
 
             <Link to="/apply">

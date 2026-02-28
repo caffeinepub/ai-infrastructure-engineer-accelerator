@@ -1,32 +1,37 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { FolderOpen, Bug, Server, Code, FileText } from 'lucide-react';
+import { Github, Server, GitBranch, FileText, Bot, Presentation } from 'lucide-react';
 
 export default function QAProjectsSection() {
   const deliverables = [
     {
-      icon: FolderOpen,
-      title: 'Complete Test Case Repository',
-      description: 'A structured library of test cases covering functional, regression, and UAT scenarios.',
-    },
-    {
-      icon: Bug,
-      title: 'Defect Tracking Sample Portfolio',
-      description: 'Documented bug reports and defect lifecycle examples using Jira.',
+      icon: Github,
+      title: 'GitHub Automation Framework',
+      description: 'A fully structured automation framework published to GitHub — demonstrating real engineering practices.',
     },
     {
       icon: Server,
       title: 'API Test Collection',
-      description: 'Postman collections with real API test scenarios and assertions.',
+      description: 'Postman collections with real API test scenarios, assertions, and authentication flows.',
     },
     {
-      icon: Code,
-      title: 'Basic Automation Scripts',
-      description: 'Selenium-based automation scripts demonstrating foundational test automation.',
+      icon: GitBranch,
+      title: 'CI Pipeline Integration',
+      description: 'Automation tests wired into a GitHub Actions CI pipeline — running on every commit.',
     },
     {
       icon: FileText,
-      title: 'Capstone Documentation',
-      description: 'End-to-end project documentation combining manual, API, and automation testing.',
+      title: 'Test Strategy Documentation',
+      description: 'Professional test strategy and planning documents demonstrating QA engineering thinking.',
+    },
+    {
+      icon: Bot,
+      title: 'AI-Assisted Workflow Example',
+      description: 'A documented example of using AI for test generation, log analysis, and regression coverage — showing you can use AI responsibly.',
+    },
+    {
+      icon: Presentation,
+      title: 'Capstone Presentation',
+      description: 'Full automation suite: manual test plan, API tests, UI automation, CI integration, AI-generated enhancement layer, and documentation.',
     },
   ];
 
@@ -35,9 +40,9 @@ export default function QAProjectsSection() {
       <div className="container">
         <div className="mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="font-display text-4xl font-bold mb-4">Hands-On Project Experience</h2>
+            <h2 className="font-display text-4xl font-bold mb-4">Portfolio Deliverables</h2>
             <p className="text-xl text-muted-foreground">
-              By the end of the program, you will have:
+              Portfolio-ready material that makes you stand out in US interviews.
             </p>
           </div>
 
@@ -57,7 +62,7 @@ export default function QAProjectsSection() {
 
           <div className="bg-accent/10 border border-accent/20 rounded-lg p-6 text-center">
             <p className="font-medium text-lg">
-              Portfolio-ready material for interviews.
+              Each student graduates with a real GitHub portfolio — not just a certificate.
             </p>
           </div>
         </div>

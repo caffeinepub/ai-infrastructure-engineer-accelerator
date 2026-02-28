@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Link } from '@tanstack/react-router';
-import { CheckCircle2, Bug, TestTube2, Code2 } from 'lucide-react';
+import { Brain, Zap, GitBranch, Bot, Target } from 'lucide-react';
 
 export default function QAHeroSection() {
   return (
@@ -16,29 +16,33 @@ export default function QAHeroSection() {
       <div className="container relative py-24 md:py-32">
         <div className="mx-auto max-w-4xl text-center">
           <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 text-sm font-medium text-primary mb-6">
-            12-Week Intensive | US Market Focused
+            12 Weeks | US Market Aligned | AI-Integrated
           </div>
 
           <h1 className="font-display text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
-            QA & Software Testing{' '}
-            <span className="text-primary">Career Launch Program™</span>
+            AI-Augmented QA Automation{' '}
+            <span className="text-primary">Engineer Program™</span>
           </h1>
 
           <p className="mt-6 text-xl text-muted-foreground md:text-2xl">
-            Break into the tech industry through one of the most accessible entry paths: Quality Assurance.
+            Build automation skills + learn to use AI as a productivity multiplier — not a replacement.
           </p>
 
-          <p className="mt-4 text-lg text-muted-foreground">
-            This 3-month structured program is designed for beginners who want to build practical testing skills and prepare for entry-level QA roles in the United States.
-          </p>
+          <div className="mt-6 bg-destructive/10 border border-destructive/20 rounded-lg px-6 py-4 max-w-2xl mx-auto text-left space-y-2">
+            <p className="text-sm font-semibold text-destructive uppercase tracking-wide">The old model is dying</p>
+            <p className="text-sm text-muted-foreground">
+              AI can already generate Selenium scripts, write test cases, suggest selectors, and summarize bug reports.
+              If your course only teaches scripting — <strong>your graduates compete with AI.</strong>
+            </p>
+          </div>
 
           <div className="mt-8 flex flex-wrap justify-center gap-6">
             {[
-              { icon: CheckCircle2, label: 'No Computer Science degree required' },
-              { icon: CheckCircle2, label: 'No prior coding experience required' },
-              { icon: Bug, label: 'Manual & API Testing' },
-              { icon: TestTube2, label: 'Automation Fundamentals' },
-              { icon: Code2, label: 'Job Readiness Accelerator' },
+              { icon: Brain, label: 'Test Strategy Design' },
+              { icon: GitBranch, label: 'Resilient Automation Frameworks' },
+              { icon: Bot, label: 'AI-Augmented Workflows' },
+              { icon: Zap, label: 'CI/CD Integration' },
+              { icon: Target, label: 'US Interview Readiness' },
             ].map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center gap-2 text-sm font-medium">
                 <Icon className="h-5 w-5 text-primary" />
