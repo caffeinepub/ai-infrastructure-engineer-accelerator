@@ -30,8 +30,19 @@ export default function Layout() {
     <div className="min-h-screen flex flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <span className="font-display text-xl font-bold">Stack Teacher</span>
+          <Link to="/" className="flex items-center">
+            {/* Horizontal logo for md+ screens */}
+            <img
+              src="/assets/generated/stack-teacher-logo-horizontal.dim_400x100.png"
+              alt="Stack Teacher"
+              className="hidden sm:block h-10 w-auto object-contain"
+            />
+            {/* Icon-only logo for small screens */}
+            <img
+              src="/assets/generated/stack-teacher-icon.dim_128x128.png"
+              alt="Stack Teacher"
+              className="block sm:hidden h-9 w-9 object-contain"
+            />
           </Link>
           <nav className="flex items-center gap-4">
             <DropdownMenu>

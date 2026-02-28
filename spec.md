@@ -1,11 +1,12 @@
 # Specification
 
 ## Summary
-**Goal:** Add a Refund & Cancellation Policy page to the Stack Teacher site and link it from the footer.
+**Goal:** Create a Stack Teacher logo (horizontal and icon-only variants) and integrate it into the site's sticky header.
 
 **Planned changes:**
-- Add a "Refund Policy" link in the footer navigation alongside existing links (Terms, Privacy Policy, etc.)
-- Create a new `/refund-policy` route and `RefundPolicyPage` component containing the full Refund & Cancellation Policy text, with all "Careerist" references replaced by "Stack Teacher", `compliance@careerist.com` replaced by `support@stackteacher.com`, and address references replaced with "30 N Gould St Ste N, Sheridan, WY 82801, USA"
-- Register the `/refund-policy` route in App.tsx following the same pattern as `/terms` and `/privacy-policy`
+- Generate a horizontal logo image combining a stacked-layers geometric icon with the "Stack Teacher" wordmark in a clean, modern sans-serif font, using the site's dark/teal-cyan color palette
+- Generate a standalone icon-only variant of the stacked-layers mark in square format
+- Update `Layout.tsx` to replace the existing text-only brand mark with the horizontal logo image, linked to the home page
+- On mobile viewports, ensure the logo scales gracefully and does not overflow the header
 
-**User-visible outcome:** Users can click "Refund Policy" in the footer to navigate to a dedicated refund and cancellation policy page branded as Stack Teacher with the correct contact email and address.
+**User-visible outcome:** The sticky header displays the Stack Teacher logo (icon + wordmark) instead of plain text, consistent with the site's tech-educational aesthetic, and the logo links back to the home page on all screen sizes.

@@ -1,32 +1,25 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "StackTeacher website project. Adding a Refund & Cancellation Policy section to the footer with Stack Teacher branding, support@stackteacher.com email, and 30 N Gould St Ste N, Sheridan, WY 82801, USA address.",
+  "summary": "Stack Teacher website project — an educational/teaching platform. Version 11 deployed to production with Refund & Cancellation Policy and updated branding. User requested a logo (icon/symbol + text wordmark) for 'Stack Teacher' with a tech-educational feel.",
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Horizontal logo combining a stacked-layers geometric icon (three offset rectangular blocks forming a tower, in teal/cyan accent on dark) with the wordmark 'Stack Teacher' in a clean sans-serif font — tech-educational, sharp, modern (stack-teacher-logo-horizontal.dim_400x100.png)\n- Standalone icon-only version of the stacked-layers geometric mark from the Stack Teacher logo, same accent color, square format (stack-teacher-icon.dim_128x128.png)",
   "existing_features": [
     {
-      "id": "feature-add-a-refund-policy-link-in-the-footer-navigation-alongside-existing-footer-links-terms-privacy-policy-etc-that-navigates-to-a-new-refund-policy-route",
-      "title": "Add a 'Refund Policy' link in the footer navigation alongside existing footer links (Terms, Privacy Policy, etc.) that navigates to a new /refund-policy route.",
+      "id": "feature-generate-a-stack-teacher-logo-image-combining-an-icon-symbol-with-a-text-based-wordmark-the-icon-should-visually-represent-stacked-layers-or-blocks-evoking-knowledge-stacks-tech-layers-or-curriculum-phases-the-wordmark-should-read-stack-teacher-in-a-clean-modern-professional-font-the-overall-style-must-be-tech-educational-sharp-credible-and-forward-looking-using-the-existing-site-color-palette-dark-backgrounds-with-accent-tones-produce-the-logo-in-a-horizontal-layout-icon-left-text-right-and-a-standalone-icon-only-variant",
+      "title": "Generate a Stack Teacher logo image combining an icon/symbol with a text-based wordmark. The icon should visually represent stacked layers or blocks (evoking knowledge stacks, tech layers, or curriculum phases). The wordmark should read 'Stack Teacher' in a clean, modern, professional font. The overall style must be tech-educational: sharp, credible, and forward-looking, using the existing site color palette (dark backgrounds with accent tones). Produce the logo in a horizontal layout (icon left, text right) and a standalone icon-only variant.",
       "reqIds": [
         "REQ-1"
       ],
       "version": 1
     },
     {
-      "id": "feature-create-a-new-refundpolicypage-at-refund-policy-containing-the-full-refund-cancellation-policy-text-provided-by-the-user-with-the-following-substitutions-applied-throughout-careerist-replaced-with-stack-teacher-compliance-careerist-com-replaced-with-support-stackteacher-com-and-any-address-references-replaced-with-30-n-gould-st-ste-n-sheridan-wy-82801-usa-the-page-must-include-all-sections-the-opening-disclaimer-per-section-refund-conditions-exceptional-refund-requests-legal-framework-governing-law-dispute-resolution-and-the-closing-contact-line-pointing-to-support-stackteacher-com",
-      "title": "Create a new RefundPolicyPage at /refund-policy containing the full Refund & Cancellation Policy text provided by the user, with the following substitutions applied throughout: 'Careerist' replaced with 'Stack Teacher', 'compliance@careerist.com' replaced with 'support@stackteacher.com', and any address references replaced with '30 N Gould St Ste N, Sheridan, WY 82801, USA'. The page must include all sections: the opening disclaimer, per-section refund conditions, Exceptional Refund Requests, Legal Framework (Governing Law, Dispute Resolution), and the closing contact line pointing to support@stackteacher.com.",
+      "id": "feature-integrate-the-generated-stack-teacher-logo-into-the-website-s-sticky-header-layout-tsx-to-replace-any-existing-text-only-or-placeholder-brand-mark-use-the-horizontal-icon-wordmark-variant-in-the-header-ensure-the-logo-is-appropriately-sized-for-the-navbar-responsive-on-mobile-shrinks-gracefully-or-uses-icon-only-variant-on-small-screens-and-links-to-the-home-page",
+      "title": "Integrate the generated Stack Teacher logo into the website's sticky header (Layout.tsx) to replace any existing text-only or placeholder brand mark. Use the horizontal (icon + wordmark) variant in the header. Ensure the logo is appropriately sized for the navbar, responsive on mobile (shrinks gracefully or uses icon-only variant on small screens), and links to the home page.",
       "reqIds": [
         "REQ-2"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-register-the-refund-policy-route-in-app-tsx-tanstack-router-pointing-to-the-new-refundpolicypage-component-following-the-same-pattern-used-for-terms-and-privacy-policy-routes",
-      "title": "Register the /refund-policy route in App.tsx (TanStack Router) pointing to the new RefundPolicyPage component, following the same pattern used for /terms and /privacy-policy routes.",
-      "reqIds": [
-        "REQ-3"
       ],
       "version": 1
     }
@@ -34,13 +27,13 @@
   "new_feature_requests": [
     {
       "id": "AR-1",
-      "summary": "Add Refund & Cancellation Policy section to footer with Stack Teacher branding, support@stackteacher.com, and address 30 N Gould St Ste N, Sheridan, WY 82801, USA",
+      "summary": "Create Stack Teacher logo (icon/symbol + wordmark) with tech-educational style and integrate into website",
       "reqIds": [],
       "status": "pending"
     }
   ],
   "gameProjectType": "none",
-  "projectName": "StackTeacher",
+  "projectName": "Stack Teacher",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }

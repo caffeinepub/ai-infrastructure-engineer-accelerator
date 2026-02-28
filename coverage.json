@@ -1,46 +1,37 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-28T02:22:24.155Z",
+  "generatedAt": "2026-02-28T02:54:37.559Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 3,
-    "implemented": 3,
+    "total": 2,
+    "implemented": 2,
     "items": [
       {
         "id": "REQ-1",
-        "summary": "Add a 'Refund Policy' link in the footer navigation alongside existing footer links (Terms, Privacy Policy, etc.) that navigates to a new /refund-policy route.",
+        "summary": "Generate a Stack Teacher logo image combining an icon/symbol with a text-based wordmark. The icon should visually represent stacked layers or blocks (evoking knowledge stacks, tech layers, or curriculum phases). The wordmark should read 'Stack Teacher' in a clean, modern, professional font. The overall style must be tech-educational: sharp, credible, and forward-looking, using the existing site color palette (dark backgrounds with accent tones). Produce the logo in a horizontal layout (icon left, text right) and a standalone icon-only variant.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/Layout.tsx"
+          "frontend/public/assets/generated/stack-teacher-logo-horizontal.dim_400x100.png",
+          "frontend/public/assets/generated/stack-teacher-icon.dim_128x128.png"
         ],
         "matchedFiles": [
-          "frontend/src/components/Layout.tsx"
+          "frontend/public/assets/generated/stack-teacher-logo-horizontal.dim_400x100.png",
+          "frontend/public/assets/generated/stack-teacher-icon.dim_128x128.png"
         ]
       },
       {
         "id": "REQ-2",
-        "summary": "Create a new RefundPolicyPage at /refund-policy containing the full Refund & Cancellation Policy text provided by the user, with the following substitutions applied throughout: 'Careerist' replaced with 'Stack Teacher', 'compliance@careerist.com' replaced with 'support@stackteacher.com', and any address references replaced with '30 N Gould St Ste N, Sheridan, WY 82801, USA'. The page must include all sections: the opening disclaimer, per-section refund conditions, Exceptional Refund Requests, Legal Framework (Governing Law, Dispute Resolution), and the closing contact line pointing to support@stackteacher.com.",
+        "summary": "Integrate the generated Stack Teacher logo into the website's sticky header (Layout.tsx) to replace any existing text-only or placeholder brand mark. Use the horizontal (icon + wordmark) variant in the header. Ensure the logo is appropriately sized for the navbar, responsive on mobile (shrinks gracefully or uses icon-only variant on small screens), and links to the home page.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/pages/RefundPolicyPage.tsx"
+          "frontend/src/components/Layout.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/pages/RefundPolicyPage.tsx"
-        ]
-      },
-      {
-        "id": "REQ-3",
-        "summary": "Register the /refund-policy route in App.tsx (TanStack Router) pointing to the new RefundPolicyPage component, following the same pattern used for /terms and /privacy-policy routes.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/App.tsx"
+          "frontend/src/components/Layout.tsx"
         ]
       }
     ]
@@ -50,9 +41,9 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/App.tsx",
+    "frontend/public/assets/generated/stack-teacher-icon.dim_128x128.png",
+    "frontend/public/assets/generated/stack-teacher-logo-horizontal.dim_400x100.png",
     "frontend/src/components/Layout.tsx",
-    "frontend/src/pages/RefundPolicyPage.tsx",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

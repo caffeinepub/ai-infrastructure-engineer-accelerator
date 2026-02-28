@@ -2,11 +2,9 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-add-a-refund-policy-link-in-the-footer-navigation-alongside-existing-footer-links-terms-privacy-policy-etc-that-navigates-to-a-new-refund-policy-route",
-      "featureTitle": "Add a 'Refund Policy' link in the footer navigation alongside existing footer links (Terms, Privacy Policy, etc.) that navigates to a new /refund-policy route.",
-      "files": [
-        "frontend/src/components/Layout.tsx"
-      ],
+      "featureId": "feature-generate-a-stack-teacher-logo-image-combining-an-icon-symbol-with-a-text-based-wordmark-the-icon-should-visually-represent-stacked-layers-or-blocks-evoking-knowledge-stacks-tech-layers-or-curriculum-phases-the-wordmark-should-read-stack-teacher-in-a-clean-modern-professional-font-the-overall-style-must-be-tech-educational-sharp-credible-and-forward-looking-using-the-existing-site-color-palette-dark-backgrounds-with-accent-tones-produce-the-logo-in-a-horizontal-layout-icon-left-text-right-and-a-standalone-icon-only-variant",
+      "featureTitle": "Generate a Stack Teacher logo image combining an icon/symbol with a text-based wordmark. The icon should visually represent stacked layers or blocks (evoking knowledge stacks, tech layers, or curriculum phases). The wordmark should read 'Stack Teacher' in a clean, modern, professional font. The overall style must be tech-educational: sharp, credible, and forward-looking, using the existing site color palette (dark backgrounds with accent tones). Produce the logo in a horizontal layout (icon left, text right) and a standalone icon-only variant.",
+      "files": [],
       "components": [
         "core-infrastructure@1.0.2",
         "shadcn-ui@1.0.0",
@@ -20,10 +18,10 @@
       "confidence": "high"
     },
     {
-      "featureId": "feature-create-a-new-refundpolicypage-at-refund-policy-containing-the-full-refund-cancellation-policy-text-provided-by-the-user-with-the-following-substitutions-applied-throughout-careerist-replaced-with-stack-teacher-compliance-careerist-com-replaced-with-support-stackteacher-com-and-any-address-references-replaced-with-30-n-gould-st-ste-n-sheridan-wy-82801-usa-the-page-must-include-all-sections-the-opening-disclaimer-per-section-refund-conditions-exceptional-refund-requests-legal-framework-governing-law-dispute-resolution-and-the-closing-contact-line-pointing-to-support-stackteacher-com",
-      "featureTitle": "Create a new RefundPolicyPage at /refund-policy containing the full Refund & Cancellation Policy text provided by the user, with the following substitutions applied throughout: 'Careerist' replaced with 'Stack Teacher', 'compliance@careerist.com' replaced with 'support@stackteacher.com', and any address references replaced with '30 N Gould St Ste N, Sheridan, WY 82801, USA'. The page must include all sections: the opening disclaimer, per-section refund conditions, Exceptional Refund Requests, Legal Framework (Governing Law, Dispute Resolution), and the closing contact line pointing to support@stackteacher.com.",
+      "featureId": "feature-integrate-the-generated-stack-teacher-logo-into-the-website-s-sticky-header-layout-tsx-to-replace-any-existing-text-only-or-placeholder-brand-mark-use-the-horizontal-icon-wordmark-variant-in-the-header-ensure-the-logo-is-appropriately-sized-for-the-navbar-responsive-on-mobile-shrinks-gracefully-or-uses-icon-only-variant-on-small-screens-and-links-to-the-home-page",
+      "featureTitle": "Integrate the generated Stack Teacher logo into the website's sticky header (Layout.tsx) to replace any existing text-only or placeholder brand mark. Use the horizontal (icon + wordmark) variant in the header. Ensure the logo is appropriately sized for the navbar, responsive on mobile (shrinks gracefully or uses icon-only variant on small screens), and links to the home page.",
       "files": [
-        "frontend/src/pages/RefundPolicyPage.tsx"
+        "frontend/src/components/Layout.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -34,24 +32,6 @@
       ],
       "testIds": [
         "REQ-2"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-register-the-refund-policy-route-in-app-tsx-tanstack-router-pointing-to-the-new-refundpolicypage-component-following-the-same-pattern-used-for-terms-and-privacy-policy-routes",
-      "featureTitle": "Register the /refund-policy route in App.tsx (TanStack Router) pointing to the new RefundPolicyPage component, following the same pattern used for /terms and /privacy-policy routes.",
-      "files": [
-        "frontend/src/App.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-3"
       ],
       "confidence": "high"
     }

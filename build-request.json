@@ -1,81 +1,68 @@
 {
   "kind": "build_request",
-  "title": "Add Refund & Cancellation Policy to Footer",
+  "title": "Create and integrate Stack Teacher logo",
   "projectName": "Stack Teacher",
   "priority": "normal",
   "requirements": [
     {
       "id": "REQ-1",
-      "text": "Add a 'Refund Policy' link in the footer navigation alongside existing footer links (Terms, Privacy Policy, etc.) that navigates to a new /refund-policy route.",
+      "text": "Generate a Stack Teacher logo image combining an icon/symbol with a text-based wordmark. The icon should visually represent stacked layers or blocks (evoking knowledge stacks, tech layers, or curriculum phases). The wordmark should read 'Stack Teacher' in a clean, modern, professional font. The overall style must be tech-educational: sharp, credible, and forward-looking, using the existing site color palette (dark backgrounds with accent tones). Produce the logo in a horizontal layout (icon left, text right) and a standalone icon-only variant.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-user-logo",
+          "msg-user-yes"
         ],
         "quotes": [
-          "again in the footer add a refund Policy section"
+          "MAKE A logo for the website suited to the desing and feel",
+          "Stack Teacher",
+          "iocon/symbol with text based.",
+          "it should resonate with the project buit"
         ]
       },
       "acceptanceCriteria": [
-        "A 'Refund Policy' link is visible in the footer",
-        "Clicking the link navigates to /refund-policy"
+        "A horizontal logo image (icon + 'Stack Teacher' wordmark) is generated and saved under frontend/public/assets/generated/",
+        "A standalone icon-only variant is generated and saved under frontend/public/assets/generated/",
+        "The logo style is consistent with the site's existing tech-educational aesthetic and color palette",
+        "The icon clearly conveys stacked layers, blocks, or a teaching/knowledge metaphor"
       ]
     },
     {
       "id": "REQ-2",
-      "text": "Create a new RefundPolicyPage at /refund-policy containing the full Refund & Cancellation Policy text provided by the user, with the following substitutions applied throughout: 'Careerist' replaced with 'Stack Teacher', 'compliance@careerist.com' replaced with 'support@stackteacher.com', and any address references replaced with '30 N Gould St Ste N, Sheridan, WY 82801, USA'. The page must include all sections: the opening disclaimer, per-section refund conditions, Exceptional Refund Requests, Legal Framework (Governing Law, Dispute Resolution), and the closing contact line pointing to support@stackteacher.com.",
+      "text": "Integrate the generated Stack Teacher logo into the website's sticky header (Layout.tsx) to replace any existing text-only or placeholder brand mark. Use the horizontal (icon + wordmark) variant in the header. Ensure the logo is appropriately sized for the navbar, responsive on mobile (shrinks gracefully or uses icon-only variant on small screens), and links to the home page.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-user-logo",
+          "msg-user-yes"
         ],
         "quotes": [
-          "Refund & Cancellation Policy",
-          "replace compliance@careerist.com with support@stackteacher.com",
-          "Careerist branding with Stack teacher",
-          "all address reference to 30 N Gould St Ste N\nSheridan, WY 82801, USA"
+          "MAKE A logo for the website suited to the desing and feel",
+          "it should resonate with the project buit"
         ]
       },
       "acceptanceCriteria": [
-        "Page renders at /refund-policy",
-        "All occurrences of 'Careerist' are replaced with 'Stack Teacher'",
-        "All occurrences of 'compliance@careerist.com' are replaced with 'support@stackteacher.com'",
-        "Address '30 N Gould St Ste N, Sheridan, WY 82801, USA' appears where address is referenced",
-        "All policy sections (opening disclaimer, refund conditions, Exceptional Refund Requests, Governing Law, Dispute Resolution) are present",
-        "Contact email at the bottom of the page reads support@stackteacher.com"
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "text": "Register the /refund-policy route in App.tsx (TanStack Router) pointing to the new RefundPolicyPage component, following the same pattern used for /terms and /privacy-policy routes.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ],
-        "quotes": [
-          "again in the footer add a refund Policy section"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Navigating directly to /refund-policy loads the RefundPolicyPage without errors",
-        "Route is registered consistently with existing route definitions in App.tsx"
+        "The sticky header in Layout.tsx displays the Stack Teacher logo (horizontal variant) instead of plain text",
+        "The logo links to the home page ('/')",
+        "On mobile viewports the logo remains visible and does not overflow the header",
+        "The logo renders clearly on the site's dark/light header background without visual artifacts"
       ]
     }
   ],
   "constraints": [
-    "Do not alter any existing footer links or layout — only add the new Refund Policy link",
-    "Do not modify files listed in frontend.immutablePaths",
-    "All instances of 'Careerist' must be replaced with 'Stack Teacher' (no occurrences of 'Careerist' should remain)",
-    "All instances of 'compliance@careerist.com' must be replaced with 'support@stackteacher.com'"
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui/",
+    "Logo images must be served as static assets from frontend/public/assets/generated/ — do not route them through the backend"
   ],
   "nonGoals": [
-    "Modifying backend logic or data models",
-    "Changing any other existing pages or policy pages",
-    "Adding any new branding images or assets"
+    "Redesigning the overall site color scheme or layout",
+    "Creating animated or SVG-code-based logos — static image assets are sufficient",
+    "Adding a logo to any page other than the shared header"
   ],
   "imageRequirements": {
-    "required": [],
+    "required": [
+      "Horizontal logo combining a stacked-layers geometric icon (three offset rectangular blocks forming a tower, in teal/cyan accent on dark) with the wordmark 'Stack Teacher' in a clean sans-serif font — tech-educational, sharp, modern (stack-teacher-logo-horizontal.dim_400x100.png)",
+      "Standalone icon-only version of the stacked-layers geometric mark from the Stack Teacher logo, same accent color, square format (stack-teacher-icon.dim_128x128.png)"
+    ],
     "edits": []
   }
 }

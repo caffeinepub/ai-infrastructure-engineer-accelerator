@@ -2,7 +2,7 @@
   "frontend/src/index.css": "Global styles with sophisticated slate/emerald OKLCH color system for premium tech aesthetic, avoiding blue/purple palette.",
   "frontend/tailwind.config.js": "Extended Tailwind configuration with custom typography (Inter/Cal Sans), premium shadows, and emerald/teal accent colors for modern US tech market feel.",
   "frontend/src/App.tsx": "Main application router with TanStack Router, now including a `/refund-policy` route that renders the new RefundPolicyPage component alongside all existing routes.",
-  "frontend/src/components/Layout.tsx": "Root layout with sticky header and footer; the footer now includes a \"Refund Policy\" link navigating to /refund-policy placed between \"Privacy Policy\" and \"Programs\" links, consistent with existing footer link styling.",
+  "frontend/src/components/Layout.tsx": "Root layout with sticky header and footer; the header now displays the Stack Teacher horizontal logo image (switching to the icon-only variant on mobile), linking to the home page, replacing the previous text-only brand mark. All footer content and newsletter subscription logic remain unchanged.",
   "frontend/src/pages/LandingPage.tsx": "Landing page composition orchestrating all marketing sections in sequence from hero to FAQ.",
   "frontend/src/components/HeroSection.tsx": "Hero section with program name, $100K+ career headline, 5 core skills value proposition, and dual CTAs with background image.",
   "frontend/src/components/CareerDemandSection.tsx": "Career demand section displaying US/Canada salary ranges, AI infrastructure growth explanation, and no-coding-required messaging.",

@@ -1,54 +1,44 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add Refund & Cancellation Policy to Footer",
+  "title": "Create and integrate Stack Teacher logo",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Add a 'Refund Policy' link in the footer navigation alongside existing footer links that navigates to /refund-policy",
+      "summary": "Generate Stack Teacher logo assets (horizontal variant with icon + wordmark, and standalone icon-only variant) that visually represent stacked layers using the site's tech-educational aesthetic and existing color palette",
       "acceptanceCriteria": [
-        "A 'Refund Policy' link is visible in the footer",
-        "Clicking the link navigates to /refund-policy"
+        "A horizontal logo image (icon + 'Stack Teacher' wordmark) is generated and saved under frontend/public/assets/generated/",
+        "A standalone icon-only variant is generated and saved under frontend/public/assets/generated/",
+        "The logo style is consistent with the site's existing tech-educational aesthetic and color palette",
+        "The icon clearly conveys stacked layers, blocks, or a teaching/knowledge metaphor"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Layout.tsx",
-          "operation": "modify",
-          "description": "Add a 'Refund Policy' link in the footer navigation section alongside the existing Terms and Privacy Policy links. The link should use React Router's Link component and navigate to '/refund-policy'. Ensure the styling is consistent with existing footer links (Terms, Privacy Policy) by following the same CSS classes and structure."
+          "path": "frontend/public/assets/generated/stack-teacher-logo-horizontal.dim_400x100.png",
+          "operation": "create",
+          "description": "Generate horizontal logo combining a stacked-layers geometric icon (three offset rectangular blocks forming a tower, in teal/cyan accent on dark background) with the wordmark 'Stack Teacher' in a clean sans-serif font. The logo must use the site's existing OKLCH-based color palette (dark backgrounds with accent tones) to maintain visual consistency with the tech-educational aesthetic. The horizontal layout places the icon on the left and text on the right, sized at 400x100 pixels for navbar use."
+        },
+        {
+          "path": "frontend/public/assets/generated/stack-teacher-icon.dim_128x128.png",
+          "operation": "create",
+          "description": "Generate standalone icon-only version featuring the same stacked-layers geometric mark (three offset rectangular blocks forming a tower) in the same teal/cyan accent color on dark background. This square 128x128 pixel variant will be used for mobile responsive scenarios and favicon purposes."
         }
       ]
     },
     {
       "id": "REQ-2",
-      "summary": "Create a new RefundPolicyPage component at /refund-policy containing the full Refund & Cancellation Policy text with Stack Teacher branding substitutions applied",
+      "summary": "Integrate the generated Stack Teacher logo into the sticky header navigation, replacing any existing text-only brand mark, with responsive behavior that shows the horizontal variant on desktop and gracefully adapts on mobile",
       "acceptanceCriteria": [
-        "Page renders at /refund-policy",
-        "All occurrences of 'Careerist' are replaced with 'Stack Teacher'",
-        "All occurrences of 'compliance@careerist.com' are replaced with 'support@stackteacher.com'",
-        "Address '30 N Gould St Ste N, Sheridan, WY 82801, USA' appears where address is referenced",
-        "All policy sections (opening disclaimer, refund conditions, Exceptional Refund Requests, Governing Law, Dispute Resolution) are present",
-        "Contact email at the bottom of the page reads support@stackteacher.com"
+        "The sticky header in Layout.tsx displays the Stack Teacher logo (horizontal variant) instead of plain text",
+        "The logo links to the home page ('/')",
+        "On mobile viewports the logo remains visible and does not overflow the header",
+        "The logo renders clearly on the site's dark/light header background without visual artifacts"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/RefundPolicyPage.tsx",
-          "operation": "create",
-          "description": "Create a new RefundPolicyPage component that renders the complete Refund & Cancellation Policy text provided by the user. Apply the following substitutions throughout the policy content: replace all instances of 'Careerist' with 'Stack Teacher', replace 'compliance@careerist.com' with 'support@stackteacher.com', and replace any address references with '30 N Gould St Ste N, Sheridan, WY 82801, USA'. The page must include all required sections in order: opening disclaimer about program cancellations, per-section refund conditions with specific criteria for each program section (Tech Foundations, Cloud Engineering, Kubernetes, AI Infrastructure), Exceptional Refund Requests section, Legal Framework section (including Governing Law and Dispute Resolution subsections), and closing contact information pointing to support@stackteacher.com. Follow the same layout structure and styling patterns used in TermsOfUsePage.tsx and PrivacyPolicyPage.tsx for consistency, including a sticky header with a back-to-home link and appropriate spacing/typography for readability."
-        }
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "summary": "Register the /refund-policy route in App.tsx pointing to RefundPolicyPage component",
-      "acceptanceCriteria": [
-        "Navigating directly to /refund-policy loads the RefundPolicyPage without errors",
-        "Route is registered consistently with existing route definitions in App.tsx"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/src/components/Layout.tsx",
           "operation": "modify",
-          "description": "Register a new route for '/refund-policy' in the TanStack Router configuration that points to the RefundPolicyPage component. Follow the same pattern used for the existing '/terms' and '/privacy-policy' routes, ensuring the route is wrapped in the shared Layout component. Add the necessary import statement for RefundPolicyPage at the top of the file alongside the other page imports."
+          "description": "Replace the existing text-only brand mark in the sticky header with an img element displaying the horizontal logo from frontend/public/assets/generated/stack-teacher-logo-horizontal.dim_400x100.png. Wrap the img in a Link component pointing to '/'. Apply responsive sizing: on desktop the logo displays at appropriate navbar height (e.g., h-10 or h-12); on mobile viewports (sm and below) either scale down proportionally or conditionally switch to the icon-only variant frontend/public/assets/generated/stack-teacher-icon.dim_128x128.png to prevent overflow. Add alt text 'Stack Teacher' for accessibility. Ensure the logo contrasts well against the header's existing background color (the header already uses a dark background per the site aesthetic)."
         }
       ]
     }
